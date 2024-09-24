@@ -1,0 +1,32 @@
+/* --- Variables --- */
+:root {
+    --font-bold: url(fonts/Antonio/static/Antonio-Bold.ttf);
+    --font-semibold: url(fonts/Antonio/static/Antonio-Bold.ttf);
+    --font-regular: url(fonts/Antonio/static/Antonio-Regular.ttf);
+    --main-bg-color: #0D1B2A;
+    --title-color: #415A77;
+    --subtitle-color: #778DA9;
+    --text-color: #E0E1DD;
+    --icon-color: #1B263B;
+}
+
+/* --- Fonts --- */
+@font-face {
+    font-family: 'Antonio-Bold';
+    src: var(--font-antonio-bold);
+}
+
+@font-face {
+    font-family: 'Antonio-semibold';
+    src: var(--font-antonio-semibold);
+}
+
+@font-face {
+    font-family: 'Antonio-regular';
+    src: var(--font-antonio-regular);
+}
+
+/* --- Main Colors --- */
+body {
+    background-color: var(--main-bg-color);
+}
