@@ -13,7 +13,7 @@
 /* --- Fonts --- */
 @font-face {
     font-family: 'Antonio-Bold';
-    src: var(--font-antonio-bold);
+    src: var(--font-bold);
 }
 
 @font-face {
@@ -32,5 +32,5 @@ body {
 }
 
 .title {
-    color: var(--title-color);
+    color: var(--title-color);  
 }

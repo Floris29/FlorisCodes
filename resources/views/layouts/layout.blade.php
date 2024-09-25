@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body style="height:100vh;width:100vw">
     @yield('content')
 </body>
 

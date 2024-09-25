@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Antonio-Bold';
+        font-weight: 900;
+        src: url(../../public/css/fonts/Antonio/static/Antonio-Bold.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Antontio-Semibold';
+        font-weight: bold;
+        src: url(../../public/css/fonts/Antonio/static/Antonio-SemiBold.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Antonio-Regular';
+        src: url(../../public/css/fonts/Antonio/static/Antonio-Regular.ttf)  format('truetype');
+    }
+}
