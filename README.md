@@ -23,7 +23,7 @@ This portfolio was initially designed in Canva, where I created a visual concept
 ## Future Improvements
 - **Finishing the desktop version**: This speaks for itself.
 - **Creating a responsive design**: Creating a responsive design.
-- **Performance Optimization**: Improve the website's load time and performance, particularly on mobile devices.
+- **Performance Optimization**: Improve the website's load time and performance.
 - **Multilingual Support**: Implement language support to cater to a broader audience.
 - **Light/Dark theme**: Implement a switch between light and dark theme.
 
