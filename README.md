@@ -1,66 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# FlorisCodes
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**FlorisCodes** is my personal portfolio website, designed to showcase my projects and skills. The website is built using Laravel and TailwindCSS, with a focus on creating a modern and responsive design. This portfolio is aimed at demonstrating my capabilities to future employers and highlighting the work I’ve done.
 
-## About Laravel
+## Project Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This portfolio was initially designed in Canva, where I created a visual concept that I later translated into code. The goal is to provide a clear and professional overview of my work while making the website visually appealing and easy to navigate. The use of Laravel for the backend and TailwindCSS for the frontend ensures the project is built with modern, scalable technologies.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
+- **Project Pages**: Each project is detailed with descriptions and technologies used, allowing visitors to view my work.
+- **Skills Section**: A section that highlights the programming languages and tools I’m proficient in.
+- **Contact Form**: A simple form for visitors or potential employers to get in touch with me directly.
+- **Responsive Design**: The site is fully responsive, ensuring it works well on devices of all sizes.
+- **CMS**: The backend allows me to add and manage projects with ease, ensuring my portfolio is always up to date.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technologies Used
+- **Laravel**: PHP framework used for the backend, handling routing, database operations, and templating.
+- **TailwindCSS**: Utility-first CSS framework used to style the website quickly and efficiently.
+- **Vite**: Tool used for compiling and bundling assets.
+- **Canva**: Used for designing the initial layout of the website.
+- **MySQL**: The database that stores information about projects, skills, and contact submissions.
 
-## Learning Laravel
+## Future Improvements
+- **Finishing the desktop version**: This speaks for itself.
+- **Creating a responsive design**: Creating a responsive design.
+- **Performance Optimization**: Improve the website's load time and performance, particularly on mobile devices.
+- **Multilingual Support**: Implement language support to cater to a broader audience.
+- **Light/Dark theme**: Implement a switch between light and dark theme.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Contributing
+If you’d like to contribute to this project, feel free to submit a pull request or open an issue on GitHub. Contributions are welcome!
