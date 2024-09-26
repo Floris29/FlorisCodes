@@ -15,6 +15,7 @@ module.exports = {
     },
     colors: {
       'main-bg': '#0D1B2A',
+      'primary-bg': '#415a77',
       'title': '#415A77',
       'subtitle': '#778DA9',
       'text': '#E0E1DD',
