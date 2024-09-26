@@ -9,13 +9,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @vite('resources/css/app.css')
+    <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon"/>
 
 </head>
 
-<body style="height:100vh;width:100vw">
+<body style="height:100vh" class="bg-main-bg">
+    <x-header />
+
     @yield('content')
 </body>
+
+<x-footer />
 
 </html>

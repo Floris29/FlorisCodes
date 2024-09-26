@@ -1,9 +1,3 @@
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center">© 2024 All Rights Reserved. Developed by Floris</p>
-            </div>
-        </div>
-    </div>
+    <h3 class="text-6xl text-center uppercase text-subtitle font-antonio font-bold"><a href="Https://Floriscodes.nl">© FlorisCodes.nl - 2024</a></h3>
 </footer>

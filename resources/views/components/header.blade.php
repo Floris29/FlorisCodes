@@ -1,9 +1,12 @@
 <header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="uppercase text-subtitle font-antonio font-bold flex justify-between items-center">
+        <div class="w-1/5">
+            <a href="#home"><img src="img/Banner-Dark.png" alt="Image Description" class=" mt-3"></a>
+        </div>
+        <div class="mr-14">
+            <a href="#about" class="p-4 text-6xl">About me</a>
+            <a href="#portfolio" class="p-4 text-6xl">Portfolio</a>
+            <a href="#contact" class="p-4 text-6xl">Contact</a>
+        </div>
     </nav>
 </header>
