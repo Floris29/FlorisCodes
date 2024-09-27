@@ -14,7 +14,7 @@
 
 </head>
 
-<body style="height:100vh" class="bg-main-bg">
+<body style="height:100vh" class="bg-main-bg scroll-smooth">
     <x-header />
 
     @yield('content')
