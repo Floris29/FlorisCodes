@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -10,12 +10,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     <link rel="favicon" href="{{ asset('img/favicon.png') }}" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/aab1cdc4fa.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body style="height:100vh" class="bg-main-bg scroll-smooth">
+<body class="bg-main-bg">
     <x-header />
 
     @yield('content')
