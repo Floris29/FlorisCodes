@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="bg-main-bg">
+<body class="bg-main-bg scroll-smooth">
     <x-header />
 
     @yield('content')
