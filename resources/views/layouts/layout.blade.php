@@ -10,7 +10,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     @vite('resources/css/app.css')
-    <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon"/>
+    <link rel="favicon" href="{{ asset('img/favicon.png') }}" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/aab1cdc4fa.js" crossorigin="anonymous"></script>
 
 </head>
 
