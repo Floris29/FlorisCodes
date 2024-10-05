@@ -10,10 +10,12 @@ module.exports = {
     },
     fontSize: {
       '9xl': '14rem',
-      '8xl': '9rem',
-      '7xl': '3.7rem',
+      '8xl': '8rem',
+      '7xl': '5rem',
+      '6xl': '3.7rem',
       '4xl': '1.6rem',
       '5xl': '2.2rem',
+      'xl': '1.5rem',
     },
     colors: {
       'main-bg': '#0D1B2A',
