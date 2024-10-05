@@ -45,10 +45,10 @@
             <div class="mx-auto my-auto">
                 <h2 class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name is
                     Floris melchers</h2>
-                <h4 class="text-7xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
+                <h4 class="text-6xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
 
                 <div class="flex mt-10 p-2.5">
-                    <h4 class="text-7xl text-subtitle uppercase font-antonio ">Techstack |</h4>
+                    <h4 class="text-6xl text-subtitle uppercase font-antonio ">Techstack |</h4>
 
                     <img src="img/html.svg" alt="html logo">
 
@@ -62,6 +62,21 @@
                 </div>
             </div>
         </div>
+
+    </section>
+
+    <section id="about">
+
+            <div class="text-center w-3/5 mx-auto mt-24">
+                {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
+                <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end developer from the Netherlands.</h2>
+                <p class="text-xl font-antonio text-text">
+                    I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
+                    experience with HTML, CSS, JavaScript, PHP, and Laravel. I am always eager to learn new things and
+                    improve my skills. I am a team player and I love working together with other developers to create
+                    amazing websites.
+                </p>
+            </div>
 
     </section>
 @endsection
