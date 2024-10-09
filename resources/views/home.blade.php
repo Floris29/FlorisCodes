@@ -43,8 +43,8 @@
             </div>
 
             <div class="mx-auto my-auto">
-                <h2
-                    class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name is <br>Floris melchers</h2>
+                <h2 class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name
+                    is <br>Floris melchers</h2>
                 <h4 class="text-6xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
 
                 <div class="flex mt-10 p-2.5">
@@ -93,15 +93,7 @@
         <div class="grid">
 
             <div>
-                <img src="" alt="">
-                <div>
-                <h3 class="text-5xl text-subtitle uppercase font-antonio">Project 1</h3>
-                <p class="text-xl font-antonio text-text">
-                    This is a project I did for a client. It is a website for a small business that sells handmade
-                    jewelry. The website is built with HTML, CSS, and JavaScript. It is a simple and clean design that
-                    showcases the products in a beautiful way.
-                </p>
-            </div>
+                <a href="showcase" class="text-text text-xl">Check out all my projects!</a>
             </div>
 
         </div>
