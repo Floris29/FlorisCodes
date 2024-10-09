@@ -1,5 +1,7 @@
 @extends('components.layout')
 
+<x-header />
+
 @section('content')
     <section class="h-full" style="height:100vh">
         <div class="flex items-center justify-center h-full">

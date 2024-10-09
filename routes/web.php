@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('pages.home');
 });
 
-route::get('showcase', function () {
-    return view('showcase');
+
+Route::get('/showcase', [ProjectController::class, 'index']);
+
+route::get('/showcase/create', [ProjectController::class, 'create']);
+route::post('/projects', [ProjectController::class, 'store']);
+
+Route::group(['dashboard', 'middelware' => 'auth'], function() {
+    route::resource('projects', ProjectController::class);
 });

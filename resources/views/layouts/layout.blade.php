@@ -17,7 +17,6 @@
 </head>
 
 <body class="bg-main-bg">
-    <x-header />
 
     @yield('content')
 </body>

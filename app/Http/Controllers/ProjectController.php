@@ -13,7 +13,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::all();
-        return view('showcase', compact('projects'));
+        return view('pages/showcase', compact('projects'));
     }
 
     /**
@@ -21,7 +21,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        return view('CRUD.Create');
     }
 
     /**
@@ -29,7 +29,21 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+
+        $project = new Project();
+        $project->name = $request->name;
+        $project->description = $request->description;
+        $project->image = $request->image->store('images', 'public');
+
+        $project->save();
+        return redirect('/showcase');
     }
 
     /**
