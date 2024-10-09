@@ -43,8 +43,8 @@
             </div>
 
             <div class="mx-auto my-auto">
-                <h2 class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name is
-                    Floris melchers</h2>
+                <h2
+                    class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name is <br>Floris melchers</h2>
                 <h4 class="text-6xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
 
                 <div class="flex mt-10 p-2.5">
@@ -67,16 +67,44 @@
 
     <section id="about">
 
-            <div class="text-center w-3/5 mx-auto mt-24">
-                {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
-                <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end developer from the Netherlands.</h2>
+        <div class="text-center w-3/5 mx-auto mt-24">
+            {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
+            <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end
+                developer from the Netherlands.</h2>
+            <p class="text-xl font-antonio text-text">
+                I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
+                experience with HTML, CSS, JavaScript, PHP, and Laravel. I am always eager to learn new things and
+                improve my skills. I am a team player and I love working together with other developers to create
+                amazing websites.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="portfolio">
+
+        <div class="text-center w-3/5 mx-auto mt-24">
+            {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
+            <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
+            <h3 class="text-5xl text-subtitle uppercase font-antonio">Each project is a learning experience.</h3>
+        </div>
+
+
+        <div class="grid">
+
+            <div>
+                <img src="" alt="">
+                <div>
+                <h3 class="text-5xl text-subtitle uppercase font-antonio">Project 1</h3>
                 <p class="text-xl font-antonio text-text">
-                    I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
-                    experience with HTML, CSS, JavaScript, PHP, and Laravel. I am always eager to learn new things and
-                    improve my skills. I am a team player and I love working together with other developers to create
-                    amazing websites.
+                    This is a project I did for a client. It is a website for a small business that sells handmade
+                    jewelry. The website is built with HTML, CSS, and JavaScript. It is a simple and clean design that
+                    showcases the products in a beautiful way.
                 </p>
             </div>
+            </div>
+
+        </div>
 
     </section>
 @endsection
