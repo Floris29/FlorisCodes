@@ -13,7 +13,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::all();
-        return view('pages/showcase', compact('projects'));
+        return view('pages/projects', compact('projects'));
     }
 
     /**
@@ -29,21 +29,25 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-
-
-        $this->validate($request, [
-            'name' => 'required',
-            'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        // Valideer de ingevoerde gegevens, inclusief de afbeelding
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Max 2MB en alleen afbeeldingen
         ]);
-
+    
+        // Sla de afbeelding op in de 'public/projects' map
+        $path = $request->file('image')->store('projects', 'public');
+    
+        // Maak een nieuw project aan met de naam, beschrijving en afbeelding
         $project = new Project();
-        $project->name = $request->name;
-        $project->description = $request->description;
-        $project->image = $request->image->store('images', 'public');
-
+        $project->name = $request->input('name');
+        $project->description = $request->input('description');
+        $project->image_path = $path;  // Sla het afbeeldingspad op in de database
         $project->save();
-        return redirect('/showcase');
+    
+        // Redirect naar een gewenste route, bijvoorbeeld de index-pagina
+        return redirect()->route('projects.index')->with('success', 'Project successfully created!');
     }
 
     /**

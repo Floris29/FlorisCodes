@@ -45,8 +45,8 @@
             </div>
 
             <div class="mx-auto my-auto">
-                <h2 class="text-8xl text-title uppercase font-antonio font-bold whitespace-pre-line leading-tight">my name
-                    is <br>Floris melchers</h2>
+                <h2 class="text-8xl text-title uppercase font-antonio 
+                font-bold whitespace-pre-line leading-tight">my name is <br>Floris melchers</h2>
                 <h4 class="text-6xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
 
                 <div class="flex mt-10 p-2.5">
@@ -95,7 +95,7 @@
         <div class="grid">
 
             <div>
-                <a href="showcase" class="text-text text-xl">Check out all my projects!</a>
+                <a href="projects" class="text-text text-xl">Check out all my projects!</a>
             </div>
 
         </div>

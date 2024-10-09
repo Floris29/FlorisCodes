@@ -21,9 +21,7 @@ Route::get('/', function () {
 
 Route::get('/showcase', [ProjectController::class, 'index']);
 
-route::get('/showcase/create', [ProjectController::class, 'create']);
-route::post('/projects', [ProjectController::class, 'store']);
 
-Route::group(['dashboard', 'middelware' => 'auth'], function() {
-    route::resource('projects', ProjectController::class);
+Route::group(['prefix' => 'projects'], function() {
+    Route::resource('projects', ProjectController::class);
 });
