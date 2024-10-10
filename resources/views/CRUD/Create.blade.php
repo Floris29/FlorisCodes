@@ -13,10 +13,10 @@
         </div>
     @endif
 
-    <form action="{{ route('projects.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="/projects/store" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="name">Project name</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" requiread>
 
         <label for="description">Project description</label>
         <textarea name="description" id="description" required></textarea>

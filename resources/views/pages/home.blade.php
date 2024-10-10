@@ -95,7 +95,7 @@
         <div class="grid">
 
             <div>
-                <a href="projects" class="text-text text-xl">Check out all my projects!</a>
+                <a href="/projects" class="text-text text-xl">Check out all my projects!</a>
             </div>
 
         </div>

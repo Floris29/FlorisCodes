@@ -4,7 +4,8 @@
     @foreach ($projects as $project)
         <section class="h-full" style="height:100vh">
             <div>
-                <img src="{{ $project->image }}" alt="{{ $project->name }}" class="w-full h-full object-cover">
+                <img src="{{ asset('storage/' . $project->image_path) }}" alt="{{ $project->name }}" class="w-full h-full object-cover">
+
             </div>
             <div class="flex items-center justify-center h-full">
                 <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>

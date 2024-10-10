@@ -18,10 +18,4 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-
-Route::get('/showcase', [ProjectController::class, 'index']);
-
-
-Route::group(['prefix' => 'projects'], function() {
-    Route::resource('projects', ProjectController::class);
-});
+Route::resource('projects', ProjectController::class);
