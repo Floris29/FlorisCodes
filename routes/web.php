@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home route
 Route::get('/', function () {
     return view('pages.home');
 });
 
+
 Route::resource('projects', ProjectController::class);
+

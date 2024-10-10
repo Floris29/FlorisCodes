@@ -29,7 +29,7 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        // Valideer de ingevoerde gegevens, inclusief de afbeelding
+        // Valideer de ingevoerde gegevens
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string',
@@ -43,10 +43,10 @@ class ProjectController extends Controller
         $project = new Project();
         $project->name = $request->input('name');
         $project->description = $request->input('description');
-        $project->image_path = $path;  // Sla het afbeeldingspad op in de database
+        $project->image_path = $path;
         $project->save();
     
-        // Redirect naar een gewenste route, bijvoorbeeld de index-pagina
+        // Redirect naar de index-pagina
         return redirect()->route('projects.index')->with('success', 'Project successfully created!');
     }
 
