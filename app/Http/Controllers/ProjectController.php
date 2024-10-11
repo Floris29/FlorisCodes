@@ -63,7 +63,9 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        $project = Project::find($project->id);
+        return view('CRUD.Edit', compact('project'));
+
     }
 
     /**
@@ -71,7 +73,13 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        $project = Project::find($project->id);
+        $project->name = $request->input('name');
+        $project->description = $request->input('description');
+        $project->image_path = $request->input('image_path');
+        $project->save();
+
+        return redirect()->route('projects.index')->with('success', 'Project successfully updated!');
     }
 
     /**

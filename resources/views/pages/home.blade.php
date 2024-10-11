@@ -101,4 +101,6 @@
         </div>
 
     </section>
+
+    <x-footer />
 @endsection
