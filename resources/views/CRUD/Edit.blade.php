@@ -1,7 +1,7 @@
 @extends('components.layout')
 
 @section('content')
-    <h1>Edit this prokect</h1>
+    <h1 class="text-7xl text-title uppercase font-antonio font-bold leading-none text-center">Edit this project</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -13,27 +13,30 @@
         </div>
     @endif
 
-    <form action="{{ route('projects.update', $project->id) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('projects.update', $project->id) }}" method="POST" enctype="multipart/form-data"
+        class="bg-icon flex flex-col flex-wrap-reverse content-center w-1/2 mx-auto mt-10 text-text text-xl border rounded-md">
         @csrf
         @method('PUT')
-        <label for="name">Project name</label>
-        <input type="text" name="name" id="name" placeholder="Project name" value="{{$project->name}}" required>
 
-        <label for="description">Project description</label>
-        <textarea name="description" id="description" placeholder="Project description" value="{{$project->description}}" required></textarea>
+        <input type="text" name="name" id="name" placeholder="Project name" value="{{ $project->name }}"
+            class="uppercase font-antonio font-bold text-center placeholder:text-text m-5 p-2 bg-icon border rounded-md" required>
 
-        <label for="image">Project image</label>
-        <input type="file" name="image" id="image" placeholder="Project image" value="{{$project->iamge_path}}" required>
+        <textarea name="description" id="description" placeholder="Project description" rows="4"
+            class="uppercase font-antonio font-bold text-center p-2 m-5 bg-icon placeholder:text-text border rounded-md" required>{{ $project->description }}</textarea>
 
-        <button type="submit">Edit project</button>
+        <input type="file" name="image" id="image"
+            class="uppercase font-antonio font-bold  text-center m-5 bg-icon p-2">
 
+        <button type="submit" class="uppercase font-antonio font-bold text-center m-5 p-2 bg-icon border rounded-md">Edit project</button>
     </form>
 
-    <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
+    <form action="{{ route('projects.destroy', $project->id) }}" method="POST" class="text-center mt-5">
         @csrf
         @method('DELETE')
-        <button type="submit">Delete project</button>
+        <button type="submit" class="uppercase font-antonio font-bold text-center m-5 p-2 bg-icon border rounded-md text-text">Delete project</button>
+    </form>
 
-    <a href="{{ route('projects.index') }}">Back to projects</a>
-
+    <a href="{{ route('projects.index') }}">
+        <h2 class="text-4xl text-subtitle uppercase font-antonio font-bold leading-none text-center mt-5">Go back to projects</h2>
+    </a>
 @endsection
