@@ -28,4 +28,12 @@
         <button type="submit">Edit project</button>
 
     </form>
+
+    <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit">Delete project</button>
+
+    <a href="{{ route('projects.index') }}">Back to projects</a>
+
 @endsection
