@@ -7,46 +7,35 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $projects = Project::all();
         return view('pages/projects', compact('projects'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('CRUD.Create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        // Valideer de ingevoerde gegevens
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Max 2MB en alleen afbeeldingen
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-    
-        // Sla de afbeelding op in de 'public/projects' map
+
         $path = $request->file('image')->store('projects', 'public');
-    
-        // Maak een nieuw project aan met de naam, beschrijving en afbeelding
+
         $project = new Project();
         $project->name = $request->input('name');
         $project->description = $request->input('description');
         $project->image_path = $path;
         $project->save();
-    
-        // Redirect naar de index-pagina
+
         return redirect()->route('projects.index')->with('success', 'Project successfully created!');
     }
 
@@ -58,9 +47,6 @@ class ProjectController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Project $project)
     {
         $project = Project::find($project->id);
@@ -68,23 +54,30 @@ class ProjectController extends Controller
 
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Project $project)
     {
-        $project = Project::find($project->id);
+        // Validate the request
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        if ($request->hasFile('image')) {
+
+
+            $path = $request->file('image')->store('projects', 'public');
+            $project->image_path = $path;
+        }
+
         $project->name = $request->input('name');
         $project->description = $request->input('description');
-        $project->image_path = $request->input('image_path');
+        $project->image_path = $path;
         $project->save();
 
         return redirect()->route('projects.index')->with('success', 'Project successfully updated!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Project $project)
     {
         $project = Project::find($project->id);
