@@ -3,16 +3,6 @@
 @section('content')
     <h1 class="text-7xl text-title uppercase font-antonio font-bold leading-none text-center">Edit this project</h1>
 
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
     <form action="{{ route('projects.update', $project->id) }}" method="POST" enctype="multipart/form-data"
         class="bg-icon flex flex-col flex-wrap-reverse content-center w-1/2 mx-auto mt-10 text-text text-xl border rounded-md">
         @csrf

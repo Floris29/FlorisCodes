@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,10 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+Route::get('/', function () {
+    $projects = Project::latest()->limit(5)->get();
+    return view('pages.home', compact('projects'));
+});
 
 Route::resource('projects', ProjectController::class);
 

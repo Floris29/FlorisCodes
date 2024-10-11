@@ -45,8 +45,10 @@
             </div>
 
             <div class="mx-auto my-auto">
-                <h2 class="text-8xl text-title uppercase font-antonio 
-                font-bold whitespace-pre-line leading-tight">my name is <br>Floris melchers</h2>
+                <h2
+                    class="text-8xl text-title uppercase font-antonio 
+                font-bold whitespace-pre-line leading-tight">
+                    my name is <br>Floris melchers</h2>
                 <h4 class="text-6xl text-subtitle uppercase font-antonio leading-none">I am a front-end developer</h4>
 
                 <div class="flex mt-10 p-2.5">
@@ -91,12 +93,27 @@
             <h3 class="text-5xl text-subtitle uppercase font-antonio">Each project is a learning experience.</h3>
         </div>
 
+        <div>
+            @foreach ($projects as $project)
+                <div
+                    class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-96">
+                    <div>
+                        <img src="{{ asset('storage/' . $project->image_path) }}" alt="{{ $project->name }}">
+                    </div>
+                    <div>
+                        <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
+                        <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
+                        <a href="{{ route('projects.edit', $project->id) }}"
+                            class="text-xl text-center font-antonio text-subtitle border p-2 hidden group-hover:inline-block">Edit
+                            project</a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
 
-        <div class="grid">
-
-            <div>
-                <a href="/projects" class="text-text text-xl">Check out all my projects!</a>
-            </div>
+        <div>
+            <a href="/projects" class="text-text text-xl">Check out all my projects!</a>
+        </div>
 
         </div>
 

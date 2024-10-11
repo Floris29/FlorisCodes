@@ -14,6 +14,8 @@ class ProjectController extends Controller
         return view('pages/projects', compact('projects'));
     }
 
+
+
     public function create()
     {
         return view('CRUD.Create');
@@ -64,15 +66,13 @@ class ProjectController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-
-
             $path = $request->file('image')->store('projects', 'public');
             $project->image_path = $path;
         }
 
         $project->name = $request->input('name');
         $project->description = $request->input('description');
-        $project->image_path = $path;
+
         $project->save();
 
         return redirect()->route('projects.index')->with('success', 'Project successfully updated!');
