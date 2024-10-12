@@ -90,9 +90,7 @@
         <div class="text-center w-3/5 mx-auto my-24 ">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
             <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
-            <h3 class="text-5xl text-subtitle uppercase font-antonio mb-10">Each project is a learning experience.</h3>
-            <a href="/projects" class="text-subtitle font-antonio font-bold border-4 p-5 text-xl hover:prima-ry-bg">Check out all my
-                projects!</a>
+            <h3 class="text-5xl text-subtitle uppercase font-antonio mb-5">Each project is a learning experience.</h3>
         </div>
 
         <div>
@@ -108,9 +106,17 @@
                         <a href="{{ route('projects.edit', $project->id) }}"
                             class="text-xl text-center font-antonio text-subtitle border-4 p-2 hidden group-hover:inline-block">Edit
                             project</a>
+                        {{-- <a href="{{ route('projects.show', $project->id) }}"
+                            class="text-xl text-center font-antonio text-subtitle border-4 p-2 hidden group-hover:inline-block">Edit
+                            project</a> --}}
                     </div>
                 </div>
             @endforeach
+        </div>
+
+        <div class="text-center w-3/5 mx-auto my-24 ">
+            <a href="/projects" class="text-subtitle font-antonio font-bold border-4 p-5 text-xl hover:prima-ry-bg">Check
+                out all my projects</a>
         </div>
 
     </section>
