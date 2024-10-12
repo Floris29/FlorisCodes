@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    $projects = Project::latest()->limit(5)->get();
+    $projects = Project::latest()->limit(3)->get();
     return view('pages.home', compact('projects'));
 });
 
