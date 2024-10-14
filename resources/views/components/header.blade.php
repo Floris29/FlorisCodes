@@ -1,4 +1,4 @@
-<header>
+<header id="myHeader" class="hidden">
     <nav class="uppercase text-subtitle font-antonio font-bold flex justify-between items-center fixed">
         <div class="w-1/5">
             <a href="#"><img src="img/Banner-Dark.png" alt="FlorisCodes logo" class=" mt-3"></a>
