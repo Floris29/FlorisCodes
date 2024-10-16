@@ -22,6 +22,7 @@ export default {
           '4xl': '1.6rem',
           '5xl': '2.2rem',
           'xl': '1.5rem',
+          'lg': '1.3rem',
         },
         colors: {
           'main-bg': '#0D1B2A',
