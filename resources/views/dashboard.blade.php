@@ -17,7 +17,8 @@
                                     <img src="{{ asset('storage/' . $project->image_path) }}" alt="{{ $project->name }}">
                                 </div>
                                 <div class="w-96">
-                                    <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
+                                    <h1 class="uppercase text-6xl font-antonio font-bold text-title">
+                                        {{ $project->name }}</h1>
                                     <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
                                     <a href="{{ route('projects.edit', $project->id) }}"
                                         class="text-xl text-center font-antonio text-subtitle border-4 p-2 hidden group-hover:inline-block">Edit

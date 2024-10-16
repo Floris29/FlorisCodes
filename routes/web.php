@@ -28,10 +28,9 @@ Route::get('/', function () {
 
 Route::resource('projects', ProjectController::class);
 
-
-
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $projects = Project::all(); 
+    return view('dashboard', compact('projects'));
 })->middleware(['auth', 'role:admin'])->name('dashboard');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
@@ -40,5 +39,5 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
