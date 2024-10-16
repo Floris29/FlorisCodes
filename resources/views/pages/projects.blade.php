@@ -1,7 +1,7 @@
 @extends('components.layout')
 
 @section('content')
-    <div class="uppercase text-subtitle p-4 text-5xl font-antonio font-bold flex justify-between items-center">
+    <div class="uppercase text-subtitle p-4 text-5xl font-antonio font-bold text-center">
         <a href="/">Back to the home page</a>
     </div>
 
