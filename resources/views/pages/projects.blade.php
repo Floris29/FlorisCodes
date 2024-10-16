@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="uppercase text-subtitle p-4 text-5xl font-antonio font-bold flex justify-between items-center">
-        <a href="/projects/create">Create a new project</a>
         <a href="/">Back to the home page</a>
     </div>
 
@@ -17,10 +16,6 @@
                 <div class="w-96">
                     <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                     <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
-                    {{-- <a href="{{ route('projects.edit', $project->id) }}"
-                        class="text-xl text-center font-antonio text-subtitle border-2 uppercase font-bold p-2 hidden group-hover:inline-block">Edit
-                        project</a> --}}
-
                 </div>
             </div>
         @endforeach
