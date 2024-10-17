@@ -17,8 +17,8 @@
 
 
 
-        <div class="grid 2xl:grid-cols-[40%_60%] xl:grid-cols-[40%_60%] lg:grid-cols-[40%_60%] md:grid-cols-[40%_60%]">
-            <div class="bg-primary-bg grid grid-cols-[115px_auto] lg:grid-cols-[75px_auto] md:grid-cols-[60px_auto]">
+        <div class="grid grid-cols-[40%_60%] xs:block">
+            <div class="bg-primary-bg grid grid-cols-[115px_auto] lg:grid-cols-[75px_auto] md:grid-cols-[60px_auto] sm:grid-cols-[50px_auto] xs:grid-cols-[85px_auto]">
 
                 <div class="text-icon flex flex-col justify-around content-center flex-wrap">
 
@@ -53,16 +53,32 @@
 
                 </div>
 
-                <img src="img/Floris-img.jpg" alt="profile picture of Floris" class="my-14 lg:my-10 pl-0 w-4/5 md:my-8">
+                <img src="img/Floris-img.jpg" alt="profile picture of Floris" class="my-14 lg:my-10 pl-0 w-4/5 md:my-8 sm:my-6">
             </div>
 
-            <div class="mx-auto my-auto">
+            <div class="mx-auto my-auto xs:text-center">
                 <h2
-                    class="2xl:text-8xl xl:text-xl-8xl lg:text-lg-8xl md:text-md-7xl text-title uppercase font-antonio
-                font-bold whitespace-pre-line leading-tight"> my name is <br>Floris melchers</h2>
-                <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio leading-none">I am a front-end
+                    class="2xl:text-8xl xl:text-xl-8xl lg:text-lg-8xl md:text-md-7xl sm:text-6xl xs:text-5xl text-title uppercase font-antonio
+                font-bold whitespace-pre-line leading-tight"> my name is
+                Floris melchers</h2>
+                <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
+                text-subtitle uppercase font-antonio leading-none">I am a front-end
                     developer</h4>
 
+                    <div class="2xl:flex xl:flex lg:hidden md:hidden mt-5 justify-center items-center sm:hidden xs:hidden">
+                        {{--I don't think people want to see my techstack if there viewing my website on mobile--}}
+                        <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
+            
+                        <img src="img/html.svg" alt="html logo">
+            
+                        <img src="img/css.svg" alt="css logo">
+            
+                        <img src="img/javascript.svg" alt="javascript logo">
+            
+                        <img src="img/php.svg" alt="php logo">
+            
+                        <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+                    </div>
 
             </div>
         </div>
@@ -73,9 +89,9 @@
 
         <div class="text-center w-3/5 mx-auto mt-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
-            <h2 class="text-7xl md:text-md-6xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end
+            <h2 class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-5xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end
                 developer from the Netherlands.</h2>
-            <p class="text-xl md:text-lg font-antonio text-text">
+            <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                 I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
                 experience with HTML, CSS, JavaScript, PHP, and Laravel. I am always eager to learn new things and
                 improve my skills. I am a team player and I love working together with other developers to create
@@ -83,7 +99,8 @@
             </p>
         </div>
 
-        <div class="flex mt-5 justify-center items-center">
+        <div class="hidden lg:flex md:flex mt-5 justify-center items-center sm:hidden xs:hidden">
+            {{--I don't think people want to see my techstack if there viewing my website on mobile--}}
             <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
 
             <img src="img/html.svg" alt="html logo">
@@ -103,18 +120,19 @@
 
         <div class="text-center w-3/5 mx-auto my-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
-            <h2 class="text-7xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
-            <h3 class="text-5xl text-subtitle uppercase font-antonio mb-5">Each project is a learning experience.</h3>
+            <h2 class="text-7xl xs:text-md-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
+            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 xs:leading-none">Each project is a learning experience.</h3>
         </div>
 
         <div>
             @foreach ($projects as $project)
                 <div
-                    class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-72 md:gap-48">
+                    class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
+                    group gap-96 lg:gap-72 md:gap-48 sm:gap-28 xs:block border-b-2">
                     <div>
                         <img src="{{ asset('storage/' . $project->image_path) }}" alt="{{ $project->name }}">
                     </div>
-                    <div class="w-96">
+                    <div class="w-96 xs:mx-auto xs:max-w-fit">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                         <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
                         {{-- <a href="{{ route('projects.edit', $project->id) }}"
@@ -126,14 +144,14 @@
         </div>
 
         <div class="text-center w-3/5 mx-auto my-24 ">
-            <a href="/projects" class="text-subtitle font-antonio font-bold border-4 p-5 text-xl hover:prima-ry-bg">Check
+            <a href="/projects" class="text-subtitle font-antonio font-bold border-4 p-5 xs:p-2 xs:text-lg text-xl hover:prima-ry-bg">Check
                 out all my projects</a>
         </div>
     </section>
 
     <section id="contact">
         <div class="mx-auto bg-primary-bg w-2/3 text-center p-5">
-            <h2 class="uppercase text-5xl font-antonio font-bold text-main-bg m-5"><a href="mailto::Floris@Floriscodes.nl"
+            <h2 class="uppercase text-5xl xs:text-md-5xl font-antonio font-bold text-main-bg m-5"><a href="mailto::Floris@Floriscodes.nl"
                     class="hover:border-4 p-2">Email me </a></h2>
 
 
