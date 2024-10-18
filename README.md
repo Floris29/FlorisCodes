@@ -24,8 +24,5 @@ This portfolio was initially designed in Canva, where I created a visual concept
 
 ## Future Improvements
 
--   **Creating a responsive design**
 -   **Creating a detailed show page for every project**
 -   **Performance Optimization**
--   **Multilingual Support**
--   **Light/Dark theme**
