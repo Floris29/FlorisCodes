@@ -2,7 +2,7 @@
 <nav x-data="{ open: false }"
     class="uppercase text-subtitle font-antonio font-bold flex justify-between items-center fixed">
     <div class="w-1/5">
-        <a href="#"><img src="img/Banner-Dark.png" alt="FlorisCodes logo" class="mt-3"></a>
+        <a href="#"><img src="img/Banner-dark.png" alt="FlorisCodes logo" class="mt-3"></a>
     </div>
     <div class="mr-14 md:hidden sm:hidden xs:hidden">
         <a href="#me" class="p-4 text-sm-5xl">Who am I?</a>
