@@ -4,6 +4,10 @@
     </IfModule>
 
     RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^floriscodes.nl$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^floriscodes.nl$
+    RewriteCond %{REQUEST_URI} !public_html/
+    RewriteRule (.*) /public_html/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
