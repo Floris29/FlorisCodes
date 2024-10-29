@@ -1,0 +1,33 @@
+{
+  "public/css/Antonio/static/Antonio-Bold.ttf": {
+    "file": "assets/Antonio-Bold-BDfjfbP5.ttf",
+    "src": "public/css/Antonio/static/Antonio-Bold.ttf"
+  },
+  "public/css/Antonio/static/Antonio-Regular.ttf": {
+    "file": "assets/Antonio-Regular-zHLTsyF7.ttf",
+    "src": "public/css/Antonio/static/Antonio-Regular.ttf"
+  },
+  "public/css/Antonio/static/Antonio-SemiBold.ttf": {
+    "file": "assets/Antonio-SemiBold-C_N_fdYk.ttf",
+    "src": "public/css/Antonio/static/Antonio-SemiBold.ttf"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BuP_n9yT.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-D8Z59LYo.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-BuP_n9yT.css"
+    ],
+    "assets": [
+      "assets/Antonio-Bold-BDfjfbP5.ttf",
+      "assets/Antonio-SemiBold-C_N_fdYk.ttf",
+      "assets/Antonio-Regular-zHLTsyF7.ttf"
+    ]
+  }
+}
