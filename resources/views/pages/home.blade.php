@@ -7,7 +7,7 @@
         <div class="flex items-center justify-center h-full">
             <h1
                 class="uppercase font-antonio font-bold text-title  
-            2xl:text-9xl xl:text-xl-9xl lg:text-lg-9xl md:text-md-9xl sm:text-8xl xs:text-7xl">
+            2xl:text-9xl xl:text-xl-9xl lg:text-lg-9xl md:text-md-9xl sm:text-8xl xs:text-xs-7xl">
                 Hello World</h1>
         </div>
     </section>
@@ -96,7 +96,7 @@
         <div class="text-center w-3/5 mx-auto mt-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
             <h2
-                class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-5xl text-title uppercase font-antonio font-bold leading-none">
+                class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-md-5xl text-title uppercase font-antonio font-bold leading-none">
                 I am a passionate front-end
                 developer from the Netherlands.</h2>
             <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
@@ -128,7 +128,7 @@
 
         <div class="text-center w-3/5 mx-auto my-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
-            <h2 class="text-7xl xs:text-md-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
+            <h2 class="text-7xl xs:text-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
             <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 xs:leading-none">Each project is a
                 learning experience.</h3>
         </div>
@@ -154,7 +154,7 @@
 
         <div class="text-center w-3/5 mx-auto my-24 ">
             <a href="/projects"
-                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-lg text-xl">Check
+                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-bs text-xl">Check
                 out all my projects</a>
         </div>
     </section>

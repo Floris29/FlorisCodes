@@ -28,6 +28,7 @@ export default {
                 "xl-8xl": "7rem",
                 "lg-8xl": "5.5rem",
                 "7xl": "5rem",
+                "xl-7xl": "4.7rem",
                 "md-7xl": "4.5rem",
                 "md-6xl": "4.1rem",
                 "6xl": "3.7rem",
@@ -41,6 +42,7 @@ export default {
                 // "5xl": "2.2rem",
                 xl: "1.5rem",
                 lg: "1.3rem",
+                bs: "1.2rem",
                 sm: "1.1rem",
             },
             colors: {
