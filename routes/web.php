@@ -18,7 +18,7 @@ use App\Models\Project;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('welcome');
 });
 
 Route::get('/', function () {
@@ -29,7 +29,7 @@ Route::get('/', function () {
 Route::resource('projects', ProjectController::class);
 
 Route::get('/dashboard', function () {
-    $projects = Project::all(); 
+    $projects = Project::all();
     return view('dashboard', compact('projects'));
 })->middleware(['auth', 'role:admin'])->name('dashboard');
 
