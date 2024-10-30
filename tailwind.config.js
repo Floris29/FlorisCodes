@@ -40,9 +40,8 @@ export default {
                 "4xl": "1.6rem",
                 // "5xl": "2.2rem",
                 xl: "1.5rem",
-                "lg": "1.3rem",
-                "sm": "1.1rem",
-                
+                lg: "1.3rem",
+                sm: "1.1rem",
             },
             colors: {
                 "main-bg": "#0D1B2A",
@@ -53,13 +52,13 @@ export default {
                 icon: "#1B263B",
             },
             screens: {
-                'xs': { 'min': '375px', 'max': '639px' },
-                'sm': { 'min': '640px', 'max': '767px' },
-                'md': { 'min': '768px', 'max': '1023px' },
-                'lg': { 'min': '1024px', 'max': '1279px' },
-                'xl': { 'min': '1280px', 'max': '1535px' },
-                '2xl': { 'min': '1536px' },
-              },
+                xs: { min: "320px", max: "639px" },
+                sm: { min: "640px", max: "767px" },
+                md: { min: "768px", max: "1023px" },
+                lg: { min: "1024px", max: "1279px" },
+                xl: { min: "1280px", max: "1535px" },
+                "2xl": { min: "1536px" },
+            },
             extend: {},
         },
 
