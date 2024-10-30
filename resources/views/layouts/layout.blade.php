@@ -9,8 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-BuP_n9yT.css') }}">
-    <script src="{{ asset('/build/assets/app-D8Z59LYo.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-BrpnhJ8g.css') }}">
+    <script src="{{ asset('/build/assets/app-CU57v6bM.js') }}" defer></script>
     <link rel="favicon" href="{{ asset('../img/favicon.ico') }}" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/aab1cdc4fa.js" crossorigin="anonymous"></script>
 

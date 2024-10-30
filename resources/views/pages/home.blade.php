@@ -18,11 +18,12 @@
 
 
         <div class="grid grid-cols-[40%_60%] xs:block">
-            <div class="bg-primary-bg grid grid-cols-[115px_auto] lg:grid-cols-[75px_auto] md:grid-cols-[60px_auto] sm:grid-cols-[50px_auto] xs:grid-cols-[85px_auto]">
+            <div
+                class="bg-primary-bg grid grid-cols-[115px_auto] lg:grid-cols-[75px_auto] md:grid-cols-[60px_auto] sm:grid-cols-[50px_auto] xs:grid-cols-[85px_auto]">
 
                 <div class="text-icon flex flex-col justify-around content-center flex-wrap">
 
-                    <div class="hover:border-4 p-1">
+                    <div class="hover:border-4 hover:border-icon p-1">
                         <a href="https://www.linkedin.com/in/florismelchers/" target="_blank"><svg class="h-8 w-8"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -32,7 +33,7 @@
                             </svg></a>
                     </div>
 
-                    <div class="hover:border-4 p-2">
+                    <div class="hover:border-4 hover:border-icon p-2">
                         <a href="https://github.com/floris29" target="_blank"><svg class="h-8 w-8 " viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -41,7 +42,7 @@
                             </svg></a>
                     </div>
 
-                    <div class="hover:border-4 p-2">
+                    <div class="hover:border-4 hover:border-icon p-2">
                         <a href="https://x.com/Floris_Melchers" target="_blank"><svg class="h-8 w-8 " width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -53,32 +54,37 @@
 
                 </div>
 
-                <img src="img/Floris-img.jpg" alt="profile picture of Floris" class="my-14 lg:my-10 pl-0 w-4/5 md:my-8 sm:my-6">
+                <img src="img/Floris-img.jpg" alt="profile picture of Floris"
+                    class="my-14 lg:my-10 pl-0 w-4/5 md:my-8 sm:my-6">
             </div>
 
             <div class="mx-auto my-auto xs:text-center">
                 <h2
                     class="2xl:text-8xl xl:text-xl-8xl lg:text-lg-8xl md:text-md-7xl sm:text-6xl xs:text-5xl text-title uppercase font-antonio
-                font-bold whitespace-pre-line leading-tight"> my name is
-                Floris melchers</h2>
-                <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
-                text-subtitle uppercase font-antonio leading-none">I am a front-end
+                font-bold whitespace-pre-line leading-tight">
+                    my name is
+                    Floris melchers</h2>
+                <h4
+                    class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
+                text-subtitle uppercase font-antonio leading-none">
+                    I am a front-end
                     developer</h4>
 
-                    <div class="2xl:flex xl:flex lg:hidden md:hidden mt-5 justify-center items-center sm:hidden xs:hidden">
-                        {{--I don't think people want to see my techstack if there viewing my website on mobile--}}
-                        <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
-            
-                        <img src="img/html.svg" alt="html logo">
-            
-                        <img src="img/css.svg" alt="css logo">
-            
-                        <img src="img/javascript.svg" alt="javascript logo">
-            
-                        <img src="img/php.svg" alt="php logo">
-            
-                        <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
-                    </div>
+                <div class="2xl:flex xl:flex lg:hidden md:hidden mt-5 justify-center items-center sm:hidden xs:hidden">
+                    {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
+                    <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |
+                    </h4>
+
+                    <img src="img/html.svg" alt="html logo">
+
+                    <img src="img/css.svg" alt="css logo">
+
+                    <img src="img/javascript.svg" alt="javascript logo">
+
+                    <img src="img/php.svg" alt="php logo">
+
+                    <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+                </div>
 
             </div>
         </div>
@@ -89,7 +95,9 @@
 
         <div class="text-center w-3/5 mx-auto mt-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
-            <h2 class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-5xl text-title uppercase font-antonio font-bold leading-none">I am a passionate front-end
+            <h2
+                class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-5xl text-title uppercase font-antonio font-bold leading-none">
+                I am a passionate front-end
                 developer from the Netherlands.</h2>
             <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                 I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
@@ -100,7 +108,7 @@
         </div>
 
         <div class="hidden lg:flex md:flex mt-5 justify-center items-center sm:hidden xs:hidden">
-            {{--I don't think people want to see my techstack if there viewing my website on mobile--}}
+            {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
             <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
 
             <img src="img/html.svg" alt="html logo">
@@ -121,7 +129,8 @@
         <div class="text-center w-3/5 mx-auto my-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
             <h2 class="text-7xl xs:text-md-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
-            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 xs:leading-none">Each project is a learning experience.</h3>
+            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 xs:leading-none">Each project is a
+                learning experience.</h3>
         </div>
 
         <div>
@@ -144,32 +153,33 @@
         </div>
 
         <div class="text-center w-3/5 mx-auto my-24 ">
-            <a href="/projects" class="text-subtitle font-antonio font-bold border-4 p-5 xs:p-2 xs:text-lg text-xl hover:prima-ry-bg">Check
+            <a href="/projects"
+                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-lg text-xl">Check
                 out all my projects</a>
         </div>
     </section>
 
     <section id="contact">
         <div class="mx-auto bg-primary-bg w-2/3 text-center p-5">
-            <h2 class="uppercase text-5xl xs:text-md-5xl font-antonio font-bold text-main-bg m-5"><a href="mailto::Floris@Floriscodes.nl"
-                    class="hover:border-4 p-2">Email me </a></h2>
+            <h2 class="uppercase text-5xl xs:text-md-5xl font-antonio font-bold text-main-bg m-5"><a
+                    href="mailto::Floris@Floriscodes.nl" class="hover:border-4 p-2">Email me </a></h2>
 
 
 
 
             <div class="text-icon flex justify-around content-center">
 
-                <div class="hover:border-4 p-2">
+                <div class="hover:border-4 hover:border-icon p-1">
                     <a href="https://www.linkedin.com/in/florismelchers/" target="_blank"><svg class="h-8 w-8"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                             <rect x="2" y="9" width="4" height="12" />
                             <circle cx="4" cy="4" r="2" />
                         </svg></a>
                 </div>
 
-                <div class="hover:border-4 p-2">
+                <div class="hover:border-4 hover:border-icon p-1">
                     <a href="https://github.com/floris29" target="_blank"><svg class="h-8 w-8 " viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -178,7 +188,7 @@
                         </svg></a>
                 </div>
 
-                <div class="hover:border-4 p-2">
+                <div class="hover:border-4 hover:border-icon p-1">
                     <a href="https://x.com/Floris_Melchers" target="_blank"><svg class="h-8 w-8 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
