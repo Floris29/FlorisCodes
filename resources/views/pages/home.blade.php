@@ -7,7 +7,7 @@
         <div class="flex items-center justify-center h-full">
             <h1
                 class="uppercase font-antonio font-bold text-title  
-            2xl:text-9xl xl:text-xl-9xl lg:text-lg-9xl md:text-md-9xl sm:text-8xl xs:text-md-7xl">
+            2xl:text-9xl xl:text-xl-9xl lg:text-lg-9xl md:text-md-9xl sm:text-8xl xs:text-md-6xl">
                 Hello World</h1>
         </div>
     </section>
