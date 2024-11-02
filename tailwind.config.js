@@ -15,8 +15,7 @@ export default {
             fontFamily: {
                 antonio: [
                     "Antonio-regular",
-                    "Antonio-bold",
-                    "Antonio-semibold",
+                    "Antonio-bold"
                 ],
             },
             fontSize: {
@@ -41,7 +40,6 @@ export default {
                 // "5xl": "2.2rem",
                 xl: "1.5rem",
                 lg: "1.3rem",
-                bs: "1.2rem",
                 sm: "1.1rem",
             },
             colors: {

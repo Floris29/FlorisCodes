@@ -144,9 +144,6 @@
                     <div class="w-96 xs:mx-auto xs:max-w-fit">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                         <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
-                        {{-- <a href="{{ route('projects.edit', $project->id) }}"
-                            class="text-xl text-center font-antonio text-subtitle border-4 p-2 hidden group-hover:inline-block">Edit
-                            project</a> --}}
                     </div>
                 </div>
             @endforeach
@@ -154,7 +151,7 @@
 
         <div class="text-center w-3/5 mx-auto my-24 ">
             <a href="/projects"
-                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-bs text-xl">Check
+                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-sm text-xl">Check
                 out all my projects</a>
         </div>
     </section>

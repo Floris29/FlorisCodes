@@ -6,17 +6,11 @@
     @font-face {
         font-family: 'Antonio-Bold';
         font-weight: 900;
-        src: url('../../build/assets/Antonio-Bold-BDfjfbP5.ttf') format('truetype');
-    }
-
-    @font-face {
-        font-family: 'Antonio-Semibold';
-        font-weight: bold;
-        src: url('../../build/assets/Antonio-SemiBold-C_N_fdYk.ttf') format('truetype');
+        src: url('../../public/assets/fonts/Antonio-Bold.ttf') format('truetype');
     }
 
     @font-face {
         font-family: 'Antonio-Regular';
-        src: url('../../build/assets/Antonio-Regular-zHLTsyF7.ttf') format('truetype');
+        src: url('../../public/assets/fonts/Antonio-Regular.ttf') format('truetype');
     }
 }
