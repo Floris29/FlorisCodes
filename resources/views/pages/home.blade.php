@@ -144,7 +144,7 @@
                     </div>
                     <div class="w-96 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
-                        <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
+                        <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">{{ $project->description }}</p>
                     </div>
                 </div>
             @endforeach
