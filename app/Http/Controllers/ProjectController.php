@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Redirect;
 class ProjectController extends Controller
 {
     public function index()
@@ -35,7 +35,7 @@ class ProjectController extends Controller
         $project->image_path = $path;
         $project->save();
 
-        return redirect()->route('projects.index')->with('success', 'Project successfully created!');
+        return Redirect::to('/dashboard')->with('success', 'Product successfully created!');
     }
 
     /**
@@ -72,7 +72,7 @@ class ProjectController extends Controller
 
         $project->save();
 
-        return redirect()->route('projects.index')->with('success', 'Project successfully updated!');
+        return Redirect::to('/dashboard')->with('success', 'Product successfully created!');
     }
 
     public function destroy(Project $project)
@@ -80,6 +80,6 @@ class ProjectController extends Controller
         $project = Project::find($project->id);
         $project->delete();
 
-        return redirect()->route('projects.index')->with('success', 'Project successfully deleted!');
+        return Redirect::to('/dashboard')->with('success', 'Product successfully created!');
     }
 }
