@@ -67,8 +67,7 @@
                 <h4
                     class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
                 text-subtitle uppercase font-antonio leading-none">
-                    I am a front-end
-                    developer</h4>
+                    I am a Junior Software Developer</h4>
 
                 <div class="2xl:flex xl:flex lg:hidden md:hidden mt-5 justify-center items-center sm:hidden xs:hidden">
                     {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
@@ -96,15 +95,16 @@
         <div class="text-center w-3/5 mx-auto mt-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
             <h2
-                class="text-7xl md:text-md-6xl sm:text-md-5xl xs:text-md-5xl text-title uppercase font-antonio font-bold leading-none">
-                I am a passionate front-end
-                developer from the Netherlands.</h2>
-            <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
-                I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have
-                experience with HTML, CSS, JavaScript, PHP, and Laravel. I am always eager to learn new things and
-                improve my skills. I am a team player and I love working together with other developers to create
-                amazing websites.
+                class="text-7xl lg:text-md-7xl md:text-md-6xl sm:text-md-5xl xs:text-md-5xl text-title uppercase font-antonio font-bold leading-none">
+                I am a passionate software developer
+                from the Netherlands.</h2>
+            <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text pt-6 xs:pt-2 md:pt-4 sm:pt-4">
+                I am a software developer with experience in building dynamic, user-friendly websites using HTML, CSS,
+                JavaScript, PHP, and Laravel. I am always eager to learn and improve my skills, especially in back-end and
+                full-stack development. As a collaborative team player, I enjoy working with other developers to create
+                impactful digital experiences.
             </p>
+
         </div>
 
         <div class="hidden lg:flex md:flex mt-5 justify-center items-center sm:hidden xs:hidden">
