@@ -137,7 +137,7 @@
             @foreach ($projects as $project)
                 <div
                     class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
-                    group gap-48 lg:gap-48 md:gap-32 border-b-2 sm:block xs:block p-5">
+                    group gap-48 lg:gap-48 md:gap-32 border-b-2 border-primary-bg sm:block xs:block p-5">
                     <div>
                         <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
                             class="max-w-lg sm:max-w-xs xs:max-w-xs mx-auto">
