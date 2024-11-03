@@ -18,20 +18,17 @@
 
 
                     <div>
-                        @foreach ($projects as $index => $project)
+                        @foreach ($projects as $project)
                             <div
-                                class="flex {{ $index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-72">
+                                class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
+                                group gap-48 lg:gap-48 md:gap-32 border-b-2 sm:block xs:block ">
                                 <div>
-                                    <img src="{{ asset('storage/public/' . $project->image_path) }}"
-                                        alt="{{ $project->name }}" class="max-w-lg">
+                                    <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
+                                        class="max-w-lg sm:max-w-xs xs:max-w-xs mx-auto">
                                 </div>
-                                <div class="w-96">
-                                    <h1 class="uppercase text-6xl font-antonio font-bold text-title">
-                                        {{ $project->name }}</h1>
+                                <div class="w-96 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
+                                    <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                                     <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
-                                    <a href="{{ route('projects.edit', $project->id) }}"
-                                        class="text-xl text-center font-antonio text-subtitle border-2 uppercase font-bold p-2 hidden group-hover:inline-block">Edit
-                                        project</a>
                                 </div>
                             </div>
                         @endforeach

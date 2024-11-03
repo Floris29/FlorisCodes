@@ -129,7 +129,7 @@
         <div class="text-center w-3/5 mx-auto my-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
             <h2 class="text-7xl xs:text-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
-            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 xs:leading-none">Each project is a
+            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 leading-none">Each project is a
                 learning experience.</h3>
         </div>
 
@@ -137,11 +137,12 @@
             @foreach ($projects as $project)
                 <div
                     class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
-                    group gap-96 lg:gap-72 md:gap-48 sm:gap-28 xs:block border-b-2">
+                    group gap-48 lg:gap-48 md:gap-32 border-b-2 sm:block xs:block ">
                     <div>
-                        <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}" class="max-w-lg">
+                        <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
+                            class="max-w-lg sm:max-w-xs xs:max-w-xs mx-auto">
                     </div>
-                    <div class="w-96 xs:mx-auto xs:max-w-fit">
+                    <div class="w-96 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                         <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
                     </div>
