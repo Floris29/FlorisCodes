@@ -22,7 +22,7 @@
                             <div
                                 class="flex {{ $index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-72">
                                 <div>
-                                    <img src="{{ asset('storage/public' . $project->image_path) }}"
+                                    <img src="{{ asset('storage/public/' . $project->image_path) }}"
                                         alt="{{ $project->name }}">
                                 </div>
                                 <div class="w-96">
