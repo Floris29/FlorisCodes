@@ -1,14 +1,14 @@
 <header id="myHeader">
 <nav x-data="{ open: false }"
-    class="uppercase text-subtitle font-antonio font-bold flex justify-between items-center fixed">
+    class="uppercase text-subtitle font-antonio font-bold drop-shadow-xl flex justify-between items-center fixed">
     <div class="w-1/5">
         <a href="#"><img src="../img/Banner-dark.png" alt="FlorisCodes logo" class="mt-3"></a>
     </div>
     <div class="mr-14 md:hidden sm:hidden xs:hidden">
-        <a href="#me" class="p-4 text-sm-5xl">Who am I?</a>
-        <a href="#about" class="p-4 text-sm-5xl">About me</a>
-        <a href="#portfolio" class="p-4 text-sm-5xl">Portfolio</a>
-        <a href="#contact" class="p-4 text-sm-5xl">Contact</a>
+        <a href="#me" class="p-4 text-sm-5xl drop-shadow-xl">Who am I?</a>
+        <a href="#about" class="p-4 text-sm-5xl drop-shadow-xl">About me</a>
+        <a href="#portfolio" class="p-4 text-sm-5xl drop-shadow-xl">Portfolio</a>
+        <a href="#contact" class="p-4 text-sm-5xl drop-shadow-xl">Contact</a>
     </div>
 
     <div class="flex 2xl:hidden xl:hidden lg:hidden">
