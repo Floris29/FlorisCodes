@@ -22,7 +22,7 @@
                             <div
                                 class="flex {{ $index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-72">
                                 <div>
-                                    <img src="{{ asset('storage/' . $project->image_path) }}"
+                                    <img src="{{ asset('storage/public' . $project->image_path) }}"
                                         alt="{{ $project->name }}">
                                 </div>
                                 <div class="w-96">
@@ -30,8 +30,8 @@
                                         {{ $project->name }}</h1>
                                     <p class="text-xl font-antonio text-text">{{ $project->description }}</p>
                                     <a href="{{ route('projects.edit', $project->id) }}"
-                                            class="text-xl text-center font-antonio text-subtitle border-2 uppercase font-bold p-2 hidden group-hover:inline-block">Edit
-                                            project</a>
+                                        class="text-xl text-center font-antonio text-subtitle border-2 uppercase font-bold p-2 hidden group-hover:inline-block">Edit
+                                        project</a>
                                 </div>
                             </div>
                         @endforeach
