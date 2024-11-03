@@ -29,7 +29,7 @@ Route::get('/', function () {
 Route::resource('projects', ProjectController::class);
 
 Route::get('/dashboard', function () {
-    $projects = Project::latest()->all();
+    $projects = Project::latest()->get();
     return view('dashboard', compact('projects'));
 })->middleware(['auth', 'role:admin'])->name('dashboard');
 
