@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{ asset('/build/assets/app.css') }}">
     <script src="{{ asset('/build/assets/app2.js') }}" defer></script>
     <link rel="favicon" href="{{ asset('../img/favicon.ico') }}" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/aab1cdc4fa.js" crossorigin="anonymous"></script>
 
 </head>
 
