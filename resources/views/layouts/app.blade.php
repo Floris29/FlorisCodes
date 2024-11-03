@@ -6,27 +6,18 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="stylesheet" href="{{ asset('/build/assets/app.css') }}">
+        <script src="{{ asset('/build/assets/app2.js') }}" defer></script>
+        <link rel="favicon" href="{{ asset('../img/favicon.ico') }}" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/aab1cdc4fa.js" crossorigin="anonymous"></script>
 
-        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <!-- Scripts -->
-        <link rel="stylesheet" href="{{ asset('build/assets/app-BuP_n9yT.css') }}">
-        <script src="{{ asset('build/assets/app-D8Z59LYo.js') }}" defer></script>
     </head>
     <body>
         <div class="min-h-screen bg-main-bg">
             @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            {{-- @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif --}}
 
             <main>
                 {{ $slot }}
