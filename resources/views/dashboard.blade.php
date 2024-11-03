@@ -23,7 +23,7 @@
                                 class="flex {{ $index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center group gap-72">
                                 <div>
                                     <img src="{{ asset('storage/public/' . $project->image_path) }}"
-                                        alt="{{ $project->name }}">
+                                        alt="{{ $project->name }}" class="max-w-lg">
                                 </div>
                                 <div class="w-96">
                                     <h1 class="uppercase text-6xl font-antonio font-bold text-title">
