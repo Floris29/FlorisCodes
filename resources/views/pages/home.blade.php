@@ -74,15 +74,25 @@
                     <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |
                     </h4>
 
-                    <img src="img/html.svg" alt="html logo">
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                        <img src="img/html.svg" alt="html logo">
+                    </a>
 
-                    <img src="img/css.svg" alt="css logo">
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                        <img src="img/css.svg" alt="css logo">
+                    </a>
 
-                    <img src="img/javascript.svg" alt="javascript logo">
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                        <img src="img/javascript.svg" alt="javascript logo">
+                    </a>
 
-                    <img src="img/php.svg" alt="php logo">
+                    <a href="https://www.php.net/" target="_blank">
+                        <img src="img/php.svg" alt="php logo">
+                    </a>
 
-                    <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+                    <a href="https://laravel.com/" target="_blank">
+                        <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+                    </a>
                 </div>
 
             </div>
@@ -111,15 +121,25 @@
             {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
             <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
 
-            <img src="img/html.svg" alt="html logo">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                <img src="img/html.svg" alt="html logo">
+            </a>
 
-            <img src="img/css.svg" alt="css logo">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                <img src="img/css.svg" alt="css logo">
+            </a>
 
-            <img src="img/javascript.svg" alt="javascript logo">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                <img src="img/javascript.svg" alt="javascript logo">
+            </a>
 
-            <img src="img/php.svg" alt="php logo">
+            <a href="https://www.php.net/" target="_blank">
+                <img src="img/php.svg" alt="php logo">
+            </a>
 
-            <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+            <a href="https://laravel.com/" target="_blank">
+                <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
+            </a>
         </div>
 
     </section>
@@ -144,7 +164,8 @@
                     </div>
                     <div class="w-96 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
-                        <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">{{ $project->description }}</p>
+                        <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
+                            {{ $project->description }}</p>
                     </div>
                 </div>
             @endforeach
