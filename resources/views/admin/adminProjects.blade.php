@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('Projects') }}
         </h2>
     </x-slot>
 
@@ -14,6 +14,7 @@
                         class="uppercase text-subtitle p-4 text-5xl font-antonio font-bold flex justify-between items-center">
                         <a href="/projects/create">Create a new project</a>
                         <a href="/">Back to the home page</a>
+                        <a href="/dashboard">Back to the dashboard</a>
                     </div>
 
 
