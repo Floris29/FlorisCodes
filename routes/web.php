@@ -29,9 +29,21 @@ Route::get('/', function () {
 Route::resource('projects', ProjectController::class);
 
 Route::get('/dashboard', function () {
-    $projects = Project::latest()->get();
-    return view('dashboard', compact('projects'));
+    return view('admin.dashboard'); 
 })->middleware(['auth', 'role:admin'])->name('dashboard');
+
+Route::get('/adminprojects', function () {
+    $projects = Project::latest()->get();
+    return view('admin.adminprojects', compact('projects'));
+})->middleware(['auth', 'role:admin'])->name('dashboard');
+
+Route::get('/users', function () {
+    return view('admin.users'); 
+})->middleware(['auth', 'role:admin'])->name('users');
+
+Route::get('/statistics', function () {
+    return view('admin.statistics'); 
+})->middleware(['auth', 'role:admin'])->name('statistics');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
