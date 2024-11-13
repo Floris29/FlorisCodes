@@ -7,8 +7,10 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class=" sm:rounded-lg">
+            <div class="flex">
+                <div class="font-antonio text-title font-bold text-7xl"> Hi {{ Auth::user()->name }}</div>
 
+                <div></div>
             </div>
         </div>
     </div>
