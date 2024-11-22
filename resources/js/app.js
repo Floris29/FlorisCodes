@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 block: "start",
             });
         }
-    }, 1000);
+    }, 500);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("myHeader");
     setTimeout(() => {
         header.style.display = "block";
-    }, 2000);
+    }, 1000);
 });
 
 document.addEventListener("DOMContentLoaded", () => {

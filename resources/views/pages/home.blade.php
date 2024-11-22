@@ -61,9 +61,7 @@
             <div class="mx-auto my-auto xs:text-center">
                 <h2
                     class="2xl:text-8xl xl:text-xl-8xl lg:text-lg-8xl md:text-md-7xl sm:text-6xl xs:text-5xl text-title uppercase font-antonio
-                font-bold whitespace-pre-line leading-tight">
-                    my name is
-                    Floris melchers</h2>
+                font-bold leading-tight"> my name is <br> Floris melchers</h2>
                 <h4
                     class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
                 text-subtitle uppercase font-antonio leading-none">
