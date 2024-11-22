@@ -13,10 +13,6 @@
     </section>
 
     <section id="me">
-
-
-
-
         <div class="grid grid-cols-[40%_60%] xs:block">
             <div
                 class="bg-primary-bg grid grid-cols-[115px_auto] lg:grid-cols-[75px_auto] md:grid-cols-[60px_auto] sm:grid-cols-[50px_auto] xs:grid-cols-[85px_auto]">
@@ -61,89 +57,65 @@
             <div class="mx-auto my-auto xs:text-center">
                 <h2
                     class="2xl:text-8xl xl:text-xl-8xl lg:text-lg-8xl md:text-md-7xl sm:text-6xl xs:text-5xl text-title uppercase font-antonio
-                font-bold leading-tight"> my name is <br> Floris melchers</h2>
+                font-bold leading-tight">
+                    my name is <br> Floris melchers</h2>
                 <h4
                     class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
                 text-subtitle uppercase font-antonio leading-none">
                     I am a Junior Software Developer</h4>
+            </div>
+        </div>
+    </section>
 
-                <div class="2xl:flex xl:flex lg:hidden md:hidden mt-5 justify-center items-center sm:hidden xs:hidden">
-                    {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
-                    <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |
-                    </h4>
+    <section>
 
-                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
-                        <img src="img/html.svg" alt="html logo">
-                    </a>
+        <h2 class="text-5xl text-title uppercase font-antonio text-center">About me</h2>
 
-                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">
-                        <img src="img/css.svg" alt="css logo">
-                    </a>
+        <div class="grid grid-cols-2 gap-40">
 
-                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
-                        <img src="img/javascript.svg" alt="javascript logo">
-                    </a>
+            <div>
+                <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
+                <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text pt-6 xs:pt-2 md:pt-4 sm:pt-4">
+                    I am a software developer with experience in building dynamic, user-friendly websites using HTML, CSS,
+                    JavaScript, PHP, and Laravel. I am always eager to learn and improve my skills, especially in back-end and
+                    full-stack development. As a collaborative team player, I enjoy working with other developers to create
+                    impactful digital experiences.
+                </p>
 
-                    <a href="https://www.php.net/" target="_blank">
-                        <img src="img/php.svg" alt="php logo">
-                    </a>
+            </div>
 
-                    <a href="https://laravel.com/" target="_blank">
-                        <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
-                    </a>
+            <div>
+                <h3 class="text-md-5xl text-subtitle uppercase font-antonio">My skills</h3>
+                <div class="flex flex-wrap">
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">HTML</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">CSS</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">JavaScript</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">PHP</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Laravel</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SQL</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Git</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Tailwind</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">WordPress</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Canva</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SEO</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SCRUM</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">C#</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Java</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Node.js</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Discord.js</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Bootstrap</div>
+                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">ASP.net</div>
                 </div>
-
             </div>
         </div>
 
-    </section>
-
-    <section id="about">
-
-        <div class="text-center w-3/5 mx-auto mt-24">
-            {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">About me</h3> --}}
-            <h2
-                class="text-7xl lg:text-md-7xl md:text-md-6xl sm:text-md-5xl xs:text-md-5xl text-title uppercase font-antonio font-bold leading-none">
-                I am a passionate software developer
-                from the Netherlands.</h2>
-            <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text pt-6 xs:pt-2 md:pt-4 sm:pt-4">
-                I am a software developer with experience in building dynamic, user-friendly websites using HTML, CSS,
-                JavaScript, PHP, and Laravel. I am always eager to learn and improve my skills, especially in back-end and
-                full-stack development. As a collaborative team player, I enjoy working with other developers to create
-                impactful digital experiences.
-            </p>
-
-        </div>
-
-        <div class="hidden lg:flex md:flex mt-5 justify-center items-center sm:hidden xs:hidden">
-            {{-- I don't think people want to see my techstack if there viewing my website on mobile --}}
-            <h4 class="text-6xl lg:text-lg-6xl md:text-md-5xl text-subtitle uppercase font-antonio ">Techstack |</h4>
-
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
-                <img src="img/html.svg" alt="html logo">
-            </a>
-
-            <a href="https://www.w3schools.com/css/default.asp" target="_blank">
-                <img src="img/css.svg" alt="css logo">
-            </a>
-
-            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
-                <img src="img/javascript.svg" alt="javascript logo">
-            </a>
-
-            <a href="https://www.php.net/" target="_blank">
-                <img src="img/php.svg" alt="php logo">
-            </a>
-
-            <a href="https://laravel.com/" target="_blank">
-                <img src="img/laravel.svg" alt="laravel logo" class="p-2.5">
-            </a>
+        <div>
+            <h3>My experience</h3>
         </div>
 
     </section>
 
     <section id="portfolio">
-
         <div class="text-center w-3/5 mx-auto my-24">
             {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
             <h2 class="text-7xl xs:text-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
@@ -180,9 +152,6 @@
         <div class="mx-auto bg-primary-bg w-2/3 text-center p-5">
             <h2 class="uppercase text-5xl xs:text-md-5xl font-antonio font-bold text-main-bg m-5"><a
                     href="mailto:Floris@Floriscodes.nl" class="hover:border-4 hover:border-icon p-2">Email me </a></h2>
-
-
-
 
             <div class="text-icon flex justify-around content-center">
 
