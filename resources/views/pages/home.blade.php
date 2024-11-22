@@ -67,51 +67,66 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
 
-        <h2 class="text-5xl text-title uppercase font-antonio text-center">About me</h2>
+        <h2 class="text-5xl text-title text-center uppercase font-antonio">About me</h2>
 
-        <div class="grid grid-cols-2 gap-40 items-center justify-center">
+        <div class="grid grid-cols-2 gap-20">
 
-            <div>
+            <div class="w-4/5 ml-auto">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
-                <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
-                    I am a software developer with experience in building dynamic, user-friendly websites using HTML, CSS,
-                    JavaScript, PHP, and Laravel. I am always eager to learn and improve my skills, especially in back-end and
-                    full-stack development. As a collaborative team player, I enjoy working with other developers to create
-                    impactful digital experiences.
-                </p>
+                <div class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
+                    I am a junior software developer with experience in building dynamic,
+                    user-friendly websites using HTML, CSS, JavaScript, PHP, and Laravel.
+                    I am always eager to learn and improve my skills.
+                    <br>
+                    <br>
+                    Beyond coding, I am also a dedicated swimmer for SBC2000, where I push myself
+                    to improve both physically and mentally. Swimming has taught me the importance
+                    of discipline, resilience, and teamwork—qualities I bring into my work as a developer.
+                    <br>
+                    <br>
+                    In March, I officially started my journey as a software developer at Agency 6,
+                    where I have been developing my own skills. Joining a professional team has
+                    allowed me to grow both technically and creatively, and I am driven to continue
+                    expanding my expertise in this ever-evolving field.
+                </div>
 
             </div>
 
-            <div>
+            <div class="w-4/5">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">My skills</h3>
                 <div class="flex flex-wrap">
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">HTML</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">CSS</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">JavaScript</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">PHP</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Laravel</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SQL</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Git</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Tailwind</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">WordPress</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Canva</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SEO</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">SCRUM</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">C#</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Java</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Node.js</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Discord.js</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">Bootstrap</div>
-                    <div class="p-4 border border-icon mr-3 mb-3 bg-primary-bg font-antonio font-bold">ASP.net</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">HTML</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">CSS</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">JavaScript</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">PHP</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Laravel</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SQL</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Git</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Tailwind</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">WordPress</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Canva</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SEO</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SCRUM</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">C#</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Java</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Node.js</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Discord.js</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Bootstrap</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">ASP.net</div>
                 </div>
             </div>
         </div>
 
         <div>
-            <h3>My experience</h3>
+            <a href="#contact">Email me</a>
+            <a download="CV-Floris_Melchers" href="CV-Floris_Melchers">Download my CV</a>
         </div>
+
+        {{-- <div>
+            <h3 class="text-md-5xl text-subtitle uppercase font-antonio">My experience</h3>
+        </div> --}}
 
     </section>
 
