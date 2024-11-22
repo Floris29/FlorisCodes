@@ -71,11 +71,11 @@
 
         <h2 class="text-5xl text-title uppercase font-antonio text-center">About me</h2>
 
-        <div class="grid grid-cols-2 gap-40">
+        <div class="grid grid-cols-2 gap-40 items-center justify-center">
 
             <div>
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
-                <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text pt-6 xs:pt-2 md:pt-4 sm:pt-4">
+                <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                     I am a software developer with experience in building dynamic, user-friendly websites using HTML, CSS,
                     JavaScript, PHP, and Laravel. I am always eager to learn and improve my skills, especially in back-end and
                     full-stack development. As a collaborative team player, I enjoy working with other developers to create
