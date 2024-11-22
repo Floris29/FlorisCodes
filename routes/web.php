@@ -18,3 +18,8 @@ Route::get('/', function () {
     $projects = Project::latest()->limit(3)->get();
     return view('pages.home', compact('projects'));
 });
+
+Route::get('/projects', function () {
+    $projects = Project::latest()->get();
+    return view('pages.projects', compact('projects'));
+});
