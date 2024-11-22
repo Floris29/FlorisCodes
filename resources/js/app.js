@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 block: "start",
             });
         }
-    }, 2000);
+    }, 1000);
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const header = document.getElementById("myHeader");
-//     setTimeout(() => {
-//         header.style.display = "block";
-//     }, 2000);
-// });
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("myHeader");
+    setTimeout(() => {
+        header.style.display = "block";
+    }, 2000);
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const currentYear = new Date().getFullYear();

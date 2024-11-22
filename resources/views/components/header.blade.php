@@ -1,4 +1,4 @@
-<header id="myHeader">
+<header id="myHeader" class="hidden">
 <nav x-data="{ open: false }"
     class="uppercase text-subtitle font-antonio font-bold drop-shadow-xl flex justify-between items-center fixed">
     <div class="w-1/5">
