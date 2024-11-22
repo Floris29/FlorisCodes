@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("myHeader");
     setTimeout(() => {
         header.style.display = "block";
-    }, 1700);
+    }, 2000);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
