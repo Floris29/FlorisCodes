@@ -158,7 +158,7 @@
 
         <div class="text-center w-3/5 mx-auto my-24 ">
             <a href="/projects"
-                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-sm text-xl">Check
+                class="text-subtitle font-antonio font-bold border-4 border-primary-bg p-5 xs:p-2 xs:text-sm text-xl hover:bg-primary-bg">Check
                 out all my projects</a>
         </div>
     </section>
