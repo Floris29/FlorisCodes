@@ -63,6 +63,7 @@
                     class="text-6xl lg:text-lg-6xl md:text-md-5xl sm:text-sm-5xl xs:text-sm-4xl 
                 text-subtitle uppercase font-antonio leading-none">
                     I am a Junior Software Developer</h4>
+
             </div>
         </div>
     </section>
@@ -81,12 +82,12 @@
                     I am always eager to learn and improve my skills.
                     <br>
                     <br>
-                    Beyond coding, I am also a dedicated swimmer for SBC2000, where I push myself
+                    Beyond coding, I am also a dedicated swimmer at SBC2000, where I push myself
                     to improve both physically and mentally. Swimming has taught me the importance
                     of discipline, resilience, and teamwork—qualities I bring into my work as a developer.
                     <br>
                     <br>
-                    In March, I officially started my journey as a software developer at Agency 6,
+                    In March of 2024, I officially started my journey as a software developer at Agency 6,
                     where I have been developing my own skills. Joining a professional team has
                     allowed me to grow both technically and creatively, and I am driven to continue
                     expanding my expertise in this ever-evolving field.
@@ -95,20 +96,20 @@
             </div>
 
             <div class="w-4/5">
-                <h3 class="text-md-5xl text-subtitle uppercase font-antonio">My skills</h3>
-                <div class="flex flex-wrap">
+                <div class="flex">
+                    <h3 class="text-md-5xl text-subtitle uppercase font-antonio" id="skills">My skills</h3>
+                    <h3 class="text-md-5xl text-subtitle uppercase font-antonio" id="tools">My tools</h3>
+                </div>
+                <div class="flex flex-wrap" id="skills">
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">HTML</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">CSS</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">JavaScript</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">PHP</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Laravel</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SQL</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Git</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Tailwind</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">WordPress</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Canva</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SEO</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SCRUM</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">C#</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Java</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Node.js</div>
@@ -116,12 +117,25 @@
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Bootstrap</div>
                     <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">ASP.net</div>
                 </div>
+                <div class="flex flex-wrap" id="tools">
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Git</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Linux</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">VSCode</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">IntelliJ IDEA</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">NPM</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Vite</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SQL</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Github</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Canva</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SCRUM</div>
+                </div>
             </div>
         </div>
 
         <div class="uppercase text-xl font-antonio text-text font-bold text-center">
             <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
-            <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf" class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>
+            <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
+                class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>
         </div>
 
         {{-- <div>
@@ -132,7 +146,6 @@
 
     <section id="portfolio">
         <div class="text-center w-3/5 mx-auto my-24">
-            {{-- <h3 class="text-5xl text-subtitle uppercase font-antonio">Portfolio</h3> --}}
             <h2 class="text-7xl xs:text-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
             <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 leading-none">Each project is a
                 learning experience.</h3>
