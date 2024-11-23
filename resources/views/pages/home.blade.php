@@ -97,31 +97,31 @@
             <div class="w-4/5">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">My skills</h3>
                 <div class="flex flex-wrap">
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">HTML</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">CSS</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">JavaScript</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">PHP</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Laravel</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SQL</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Git</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Tailwind</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">WordPress</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Canva</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SEO</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">SCRUM</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">C#</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Java</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Node.js</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Discord.js</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">Bootstrap</div>
-                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold">ASP.net</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">HTML</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">CSS</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">JavaScript</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">PHP</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Laravel</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SQL</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Git</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Tailwind</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">WordPress</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Canva</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SEO</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">SCRUM</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">C#</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Java</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Node.js</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Discord.js</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">Bootstrap</div>
+                    <div class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">ASP.net</div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <a href="#contact">Email me</a>
-            <a download="CV-Floris_Melchers" href="CV-Floris_Melchers">Download my CV</a>
+        <div class="uppercase text-xl font-antonio text-text font-bold text-center">
+            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
+            <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf" class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>
         </div>
 
         {{-- <div>
