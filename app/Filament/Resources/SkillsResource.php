@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class SkillsResource extends Resource
 {
-    protected static ?string $model = Skills::class;
+    protected static ?string $model = skills::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
