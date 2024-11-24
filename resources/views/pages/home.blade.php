@@ -103,14 +103,20 @@
                         id="tools">My tools</h3>
                 </div>
                 <div class="flex-wrap" id="skills-list">
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        HTML</div>
+                    @foreach ($skills as $skill)
+                        <div
+                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg 
+                        font-antonio font-bold text-text">
+                            {{ $skill->skill }}</div>
+                    @endforeach
                 </div>
                 <div class="flex-wrap" id="tools-list">
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Git</div>
+                    @foreach ($tools as $tool)
+                        <div
+                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio 
+                        font-bold text-text">
+                            {{ $tool->tool }}</div>
+                    @endforeach
                 </div>
             </div>
         </div>
