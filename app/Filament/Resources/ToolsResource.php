@@ -32,6 +32,7 @@ class ToolsResource extends Resource
                         'Backend' => 'Backend',
                         'DevOps' => 'DevOps',
                         'Design' => 'Design',
+                        'Tools' => 'Tools',
                         'Other' => 'Other',
                     ])
                     ->required(),
