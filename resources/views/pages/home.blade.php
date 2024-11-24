@@ -70,9 +70,9 @@
 
     <section id="about">
 
-        <h2 class="text-5xl text-title text-center uppercase font-antonio">About me</h2>
+        <h2 class="text-5xl text-title text-center uppercase font-antonio mt-24">About me</h2>
 
-        <div class="grid grid-cols-2 gap-20">
+        <div class="grid grid-cols-2 gap-20 mt-5">
 
             <div class="w-4/5 ml-auto">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
