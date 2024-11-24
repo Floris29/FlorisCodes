@@ -72,9 +72,9 @@
 
         <h2 class="text-5xl text-title text-center uppercase font-antonio mt-24">About me</h2>
 
-        <div class="grid grid-cols-2 gap-20 mt-5">
+        <div class="grid grid-cols-2 gap-20 mt-5 md:block sm:block xs:block">
 
-            <div class="w-4/5 ml-auto">
+            <div class="w-4/5 2xl:ml-auto xl:ml-auto lg:ml-auto md:mx-auto sm:mx-auto xs:mx-auto">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
                 <div class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                     I am a junior software developer with experience in building dynamic,
@@ -95,11 +95,11 @@
 
             </div>
 
-            <div class="w-4/5">
+            <div class="w-4/5 md:mx-auto md:mt-5 sm:mx-auto sm:mt-5 xs:mx-auto xs:mt-5">
                 <div class="inline-flex border-primary-bg border-2 text-center p-1">
-                    <h3 class="text-md-5xl text-subtitle uppercase font-antonio hover:bg-primary-bg px-4 py-2 cursor-pointer"
+                    <h3 class="text-md-5xl md:text-sm-4xl sm:text-sm-4xl xs:text-sm-4xl text-subtitle uppercase font-antonio hover:bg-primary-bg px-4 py-2 cursor-pointer"
                         id="skills">My skills</h3>
-                    <h3 class="text-md-5xl text-subtitle uppercase font-antonio hover:bg-primary-bg px-4 py-2 cursor-pointer"
+                    <h3 class="text-md-5xl md:text-sm-4xl sm:text-sm-4xl xs:text-sm-4xl text-subtitle uppercase font-antonio hover:bg-primary-bg px-4 py-2 cursor-pointer"
                         id="tools">My tools</h3>
                 </div>
                 <div class="flex-wrap" id="skills-list">
@@ -124,7 +124,7 @@
         <div class="uppercase text-xl font-antonio text-text font-bold text-center mt-5">
             <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
-                class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>
+                class="hover:bg-main-bg xs:block bg-primary-bg px-8 py-4 ml-5 xs:px-4 xs:py-2 xs:mx-auto">Download my CV</a>
         </div>
 
         {{-- <div>
