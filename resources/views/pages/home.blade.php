@@ -70,9 +70,9 @@
 
     <section id="about">
 
-        <h2 class="text-5xl text-title text-center uppercase font-antonio">About me</h2>
+        <h2 class="text-5xl text-title text-center uppercase font-antonio mt-24">About me</h2>
 
-        <div class="grid grid-cols-2 gap-20">
+        <div class="grid grid-cols-2 gap-20 mt-5">
 
             <div class="w-4/5 ml-auto">
                 <h3 class="text-md-5xl text-subtitle uppercase font-antonio">Who am I?</h3>
@@ -103,88 +103,25 @@
                         id="tools">My tools</h3>
                 </div>
                 <div class="flex-wrap" id="skills-list">
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        HTML</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        CSS</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        JavaScript</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        PHP</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Laravel</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        SQL</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Tailwind</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        WordPress</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        SEO</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        C#</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Java</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Node.js</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Discord.js</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Bootstrap</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        ASP.net</div>
+                    @foreach ($skills as $skill)
+                        <div
+                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg 
+                        font-antonio font-bold text-text">
+                            {{ $skill->skill }}</div>
+                    @endforeach
                 </div>
                 <div class="flex-wrap" id="tools-list">
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Git</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Linux</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        VS Code</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        IntelliJ IDEA</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        NPM</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Vite</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        SQL</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Github</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        Canva</div>
-                    <div
-                        class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text">
-                        SCRUM</div>
+                    @foreach ($tools as $tool)
+                        <div
+                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio 
+                        font-bold text-text">
+                            {{ $tool->tool }}</div>
+                    @endforeach
                 </div>
             </div>
         </div>
 
-        <div class="uppercase text-xl font-antonio text-text font-bold text-center">
+        <div class="uppercase text-xl font-antonio text-text font-bold text-center mt-5">
             <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
                 class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>

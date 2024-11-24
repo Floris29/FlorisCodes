@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Project;
+use App\Models\Skills;
+use App\Models\tools;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +18,9 @@ use App\Models\Project;
 
 Route::get('/', function () {
     $projects = Project::latest()->limit(3)->get();
-    return view('pages.home', compact('projects'));
+    $skills = Skills::all();
+    $tools = Tools::all();
+    return view('pages.home', compact('projects', 'skills', 'tools'));
 });
 
 Route::get('/projects', function () {
