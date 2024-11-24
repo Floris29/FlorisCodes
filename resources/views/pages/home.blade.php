@@ -184,7 +184,7 @@
             </div>
         </div>
 
-        <div class="uppercase text-xl font-antonio text-text font-bold text-center">
+        <div class="uppercase text-xl font-antonio text-text font-bold text-center mt-5">
             <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
                 class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5">Download my CV</a>
