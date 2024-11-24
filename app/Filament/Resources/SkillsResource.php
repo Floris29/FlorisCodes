@@ -23,6 +23,23 @@ class SkillsResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('skill')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('percentage')
+                    ->numeric()
+                    ->minValue(0)
+                    ->maxValue(100)
+                    ->required(),
+                Forms\Components\Select::make('category')
+                    ->options([
+                        'Frontend' => 'Frontend',
+                        'Backend' => 'Backend',
+                        'DevOps' => 'DevOps',
+                        'Design' => 'Design',
+                        'Other' => 'Other',
+                    ])
+                    ->required(),
                 //
             ]);
     }
@@ -31,7 +48,20 @@ class SkillsResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('skill')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('percentage')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

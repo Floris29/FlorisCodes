@@ -23,6 +23,18 @@ class ToolsResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('tool')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\Select::make('category')
+                    ->options([
+                        'Frontend' => 'Frontend',
+                        'Backend' => 'Backend',
+                        'DevOps' => 'DevOps',
+                        'Design' => 'Design',
+                        'Other' => 'Other',
+                    ])
+                    ->required(),
                 //
             ]);
     }
@@ -31,7 +43,18 @@ class ToolsResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('tool')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
