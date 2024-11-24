@@ -121,10 +121,10 @@
             </div>
         </div>
 
-        <div class="uppercase text-xl font-antonio text-text font-bold text-center mt-5">
-            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me </a>
+        <div class="uppercase text-xl xs:text-lg font-antonio text-text font-bold text-center mt-5">
+            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Email me </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
-                class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5 xs:ml-2 xs:mx-auto">Download my CV</a>
+                class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4 ml-5 xs:ml-2 xs:mx-auto">Download my CV</a>
         </div>
 
         {{-- <div>
