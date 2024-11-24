@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('skill');
             $table->integer ('percentage');
+            $table->string('category');
             $table->timestamps();
         });
     }

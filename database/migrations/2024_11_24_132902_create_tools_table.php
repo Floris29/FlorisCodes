@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tools', function (Blueprint $table) {
+        Schema::create('tools', callback: function (Blueprint $table) {
             $table->id();
+            $table->string('tool');
+            $table->string('category');
             $table->timestamps();
         });
     }
