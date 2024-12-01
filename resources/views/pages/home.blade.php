@@ -113,9 +113,9 @@
                 <div class="flex-wrap" id="tools-list">
                     @foreach ($tools as $tool)
                         <div
-                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio 
-                        font-bold text-text">
-                            {{ $tool->tool }}</div>
+                            class="group px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text ">
+                            {{ $tool->tool }}
+                        </div>
                     @endforeach
                 </div>
             </div>

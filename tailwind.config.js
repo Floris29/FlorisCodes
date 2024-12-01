@@ -13,10 +13,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                antonio: [
-                    "Antonio-regular",
-                    "Antonio-bold"
-                ],
+                antonio: ["Antonio-regular", "Antonio-bold"],
             },
             fontSize: {
                 "9xl": "14rem",
