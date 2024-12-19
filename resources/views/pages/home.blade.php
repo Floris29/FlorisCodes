@@ -113,16 +113,17 @@
                 <div class="flex-wrap" id="tools-list">
                     @foreach ($tools as $tool)
                         <div
-                            class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio 
-                        font-bold text-text">
-                            {{ $tool->tool }}</div>
+                            class="group px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text ">
+                            {{ $tool->tool }}
+                        </div>
                     @endforeach
                 </div>
             </div>
         </div>
 
         <div class="uppercase text-xl xs:text-lg font-antonio text-text font-bold text-center mt-5">
-            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Email me </a>
+            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Email me
+            </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
                 class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4 ml-5 xs:ml-2 xs:mx-auto">Download my CV</a>
         </div>
@@ -147,9 +148,9 @@
                     group gap-48 lg:gap-48 md:gap-32 border-b-2 border-primary-bg sm:block xs:block p-5">
                     <div>
                         <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
-                            class="max-w-md lg:max-w-xs md:max-w-xs sm:max-w-xs xs:max-w-xs mx-auto">
+                            class="max-w-sm lg:max-w-xs md:max-w-xs sm:max-w-xs xs:max-w-xs mx-auto">
                     </div>
-                    <div class="w-96 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
+                    <div class="w-80 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
                         <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                             {{ $project->description }}</p>
