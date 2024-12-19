@@ -145,15 +145,17 @@
             @foreach ($projects as $project)
                 <div
                     class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
-                    group gap-48 lg:gap-48 md:gap-32 border-b-2 border-primary-bg sm:block xs:block p-5">
-                    <div>
-                        <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
-                            class="max-w-sm lg:max-w-xs md:max-w-xs sm:max-w-xs xs:max-w-xs mx-auto">
-                    </div>
-                    <div class="w-80 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
-                        <h1 class="uppercase text-6xl font-antonio font-bold text-title">{{ $project->name }}</h1>
-                        <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
-                            {{ $project->description }}</p>
+                    group gap-48 lg:gap-48 md:gap-32 sm:block xs:block p-5 bg-primary-bg w-2/3 m-auto">
+                    {{-- <div class="flex bg-primary-bg ">  --}}
+                        <div class="max-w-sm lg:max-w-xs md:max-w-xs sm:max-w-xs xs:max-w-xs mx-auto">
+                            <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
+                                class="w-2/3 h-auto m-auto">
+                        </div>
+                        <div class="w-80 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
+                            <h1 class="uppercase text-6xl font-antonio font-bold text-icon">{{ $project->name }}</h1>
+                            <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
+                                {{ $project->description }}</p>
+                        </div>
                     </div>
                 </div>
             @endforeach
