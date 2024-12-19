@@ -33,6 +33,16 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
+                Forms\Components\Select::make('skills_used')
+                    ->label('Skills Used')
+                    ->relationship('skills', 'skill')
+                    //->searchable()
+                    ->columnSpanFull(),
+                Forms\Components\Select::make('tools_used')
+                    ->label('Tools Used')
+                    ->relationship('tools', 'tool')
+                    //->searchable() --> Ik vind searchble niet snel dus ben ff aan het kijken of we die gaan gebruiken
+                    ->columnSpanFull(),
             ]);
     }
 
