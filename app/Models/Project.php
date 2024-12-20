@@ -15,9 +15,4 @@ class Project extends Model
     {
         return $this->belongsTo(skills::class);
     }
-
-    public function tools()
-    {
-        return $this->belongsTo(tools::class);
-    }
 }

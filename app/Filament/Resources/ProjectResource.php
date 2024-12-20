@@ -33,14 +33,10 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
-                Forms\Components\Select::make('skills')
+                Forms\Components\Select::make('skills')->multiple()
                     ->relationship('skills', 'skill')
                     ->label('Skills Used')
                     ->required(),
-                Forms\Components\Select::make('tools')
-                    ->relationship('tools', 'tool')
-                    ->label('Tools Used')
-                    ->required()
             ]);
     }
 
