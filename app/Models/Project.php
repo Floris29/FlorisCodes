@@ -18,6 +18,6 @@ class Project extends Model
 
     public function tools()
     {
-        return $this->belongsToMany(tools::class);
+        return $this->belongsTo(tools::class);
     }
 }

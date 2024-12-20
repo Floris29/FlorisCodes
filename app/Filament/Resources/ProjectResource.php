@@ -36,13 +36,11 @@ class ProjectResource extends Resource
                 Forms\Components\Select::make('skills')
                     ->relationship('skills', 'skill')
                     ->label('Skills Used')
-                    ->required()
-                    ->columnSpanFull(),
+                    ->required(),
                 Forms\Components\Select::make('tools')
                     ->relationship('tools', 'tool')
                     ->label('Tools Used')
                     ->required()
-                    ->columnSpanFull(),
             ]);
     }
 
