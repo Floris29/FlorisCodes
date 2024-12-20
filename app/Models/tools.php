@@ -13,5 +13,9 @@ class tools extends Model
         'tool',
         'category'
     ];
+
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
 }
-    

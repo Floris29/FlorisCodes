@@ -33,15 +33,15 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
-                Forms\Components\Select::make('skills_used')
-                    ->label('Skills Used')
+                Forms\Components\Select::make('skills')
                     ->relationship('skills', 'skill')
-                    //->searchable()
+                    ->label('Skills Used')
+                    ->required()
                     ->columnSpanFull(),
-                Forms\Components\Select::make('tools_used')
-                    ->label('Tools Used')
+                Forms\Components\Select::make('tools')
                     ->relationship('tools', 'tool')
-                    //->searchable() --> Ik vind searchble niet snel dus ben ff aan het kijken of we die gaan gebruiken
+                    ->label('Tools Used')
+                    ->required()
                     ->columnSpanFull(),
             ]);
     }
@@ -70,11 +70,9 @@ class ProjectResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
-
     public static function getRelations(): array
     {
         return [
