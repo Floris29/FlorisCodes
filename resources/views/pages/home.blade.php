@@ -152,6 +152,7 @@
                     </div>
                     <div class="w-3/4 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-icon">{{ $project->name }}</h1>
+                        <p>{{$project->skills_used}}</p>
                         <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                             {{ $project->description }}</p>
                     </div>
