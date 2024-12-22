@@ -8,20 +8,17 @@ return new class extends Migration {
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::table('projects', function (Blueprint $table) {
-            $table->text('skills_used')->nullable()->after('description');
+            $table->json('skills_used')->nullable(); 
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::table('projects', function (Blueprint $table) {
-            $table->dropColumn('skills_used');
+            $table->dropColumn('skills_used'); 
         });
     }
 };

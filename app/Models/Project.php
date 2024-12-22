@@ -11,4 +11,7 @@ class Project extends Model
 
     protected $fillable = ['name', 'description', 'image_path', 'skills_used', 'url', 'github'];
 
+    protected $casts = [
+        'skills_used' => 'array',
+    ];
 }
