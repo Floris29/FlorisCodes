@@ -1,9 +1,8 @@
-<?php
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ProjectResource\Pages;
 use App\Models\Project;
-use App\Models\skills;
+use App\Models\Skill;
 use App\Models\Tool;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -33,10 +32,18 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
-                Forms\Components\Select::make('skills_id')
+                Forms\Components\Select::make('skills_used')
                     ->label('Skills Used')
-                    ->relationship('skill', 'skill')
-                    ->required(),
+                    ->options(Skill::all()->pluck('skill', 'id'))
+                    ->multiple()
+                    ->required()
+                    ->columnSpanFull(),
+                Forms\Components\Select::make('tools_used')
+                    ->label('Tools Used')
+                    ->options(Tool::all()->pluck('tool', 'id'))
+                    ->multiple()
+                    ->required()
+                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('url')
                     ->label("Project URL"),
                 Forms\Components\TextInput::make('github')
@@ -65,7 +72,7 @@ class ProjectResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-            ])
+            ]);
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                 ]),
