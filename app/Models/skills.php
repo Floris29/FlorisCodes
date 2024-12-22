@@ -15,7 +15,8 @@ class skills extends Model
         'category'
     ];
 
-    public function projects()
+
+    public function project()
     {
         return $this->hasMany(Project::class);
     }
