@@ -11,8 +11,4 @@ class Project extends Model
 
     protected $fillable = ['name', 'description', 'image_path', 'skills_used', 'url', 'github'];
 
-    public function skills()
-    {
-        return $this->belongsTo(skills::class);
-    }
 }

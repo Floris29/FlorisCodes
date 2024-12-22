@@ -1,3 +1,4 @@
+<?php
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ProjectResource\Pages;
@@ -32,18 +33,26 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
-                Forms\Components\Select::make('skills_used')
+                    Forms\Components\Select::make('skills_used')
                     ->label('Skills Used')
-                    ->options(Skill::all()->pluck('skill', 'id'))
                     ->multiple()
-                    ->required()
-                    ->columnSpanFull(),
-                Forms\Components\Select::make('tools_used')
-                    ->label('Tools Used')
-                    ->options(Tool::all()->pluck('tool', 'id'))
-                    ->multiple()
-                    ->required()
-                    ->columnSpanFull(),
+                    ->options([
+                        'html' => 'HTML',
+                        'css' => 'CSS',
+                        'javascript' => 'JavaScript',
+                        'php' => 'PHP',
+                        'laravel' => 'Laravel',
+                        'mysql' => 'MySQL',
+                        'tailwind' => 'Tailwind',
+                        'wordpress' => 'WordPress',
+                        'nodejs' => 'Node.js',
+                        'aspnet' => 'ASP.NET',
+                        'csharp' => 'C#',
+                        'java' => 'Java',
+                        'discordjs' => 'Discord.js',
+                        'seo' => 'SEO',
+            ])                
+                    ->required(),
                 Forms\Components\TextInput::make('url')
                     ->label("Project URL"),
                 Forms\Components\TextInput::make('github')
@@ -72,7 +81,7 @@ class ProjectResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-            ]);
+            ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                 ]),

@@ -14,9 +14,4 @@ class skills extends Model
         'percentage',
         'category'
     ];
-
-    public function projects()
-    {
-        return $this->hasMany(Project::class);
-    }
 }
