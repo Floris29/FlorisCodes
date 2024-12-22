@@ -35,7 +35,7 @@ class ProjectResource extends Resource
                     ->required(),
                 Forms\Components\Select::make('skills_id')
                     ->label('Skills Used')
-                    ->relationship('skills', 'skill')
+                    ->relationship('skill', 'skill')
                     ->required(),
                 Forms\Components\TextInput::make('url')
                     ->label("Project URL"),
