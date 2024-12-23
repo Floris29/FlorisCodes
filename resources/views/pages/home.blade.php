@@ -146,7 +146,7 @@
                 <div
                     class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
                     group gap-8 lg:gap-8 md:gap-7 sm:block xs:block p-5 bg-primary-bg w-2/3 m-auto">
-                    <div class="">
+                    <div>
                         <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
                             class="w-2/3 h-auto m-auto">
                     </div>
@@ -155,7 +155,7 @@
                         <div class="flex">
                             @foreach ($project->skills_used as $skill)
                                 <div
-                                    class="px-6 py-3 mb-5 mr-5 text-lg bg-icon 
+                                    class="px-6 py-3 mb-3 mr-5 text-lg bg-icon 
                         font-antonio font-bold text-text">
                                     <p>{{ $skill }}</p>
                                 </div>
@@ -163,15 +163,14 @@
                         </div>
                         <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                             {{ $project->description }}</p>
-                        <div class="flex">
-                            @foreach ($project->url as $url)
-                                <a href="{{ $url }}" target="_blank"
-                                    class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Visit Site</a>
-                            @endforeach
-                            @foreach ($project->github as $github)
-                                <a href="{{ $github }}" target="_blank"
-                                    class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">View Code</a>
-                            @endforeach
+
+                        <div class="flex mt-3">
+                            <a href="{{ $project->url }}" target="_blank"
+                                class="px-6 py-3 mr-5 text-lg bg-icon font-antonio font-bold text-text uppercase">Visit
+                                Site</a>
+                            <a href="{{ $project->github }}" target="_blank"
+                                class="px-6 py-3 mr-5 text-lg bg-icon font-antonio font-bold text-text uppercase">View
+                                Code</a>
                         </div>
                     </div>
                 </div>
