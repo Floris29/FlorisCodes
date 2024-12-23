@@ -33,25 +33,25 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image_path')
                     ->image()
                     ->required(),
-                    Forms\Components\Select::make('skills_used')
+                Forms\Components\Select::make('skills_used')
                     ->label('Skills Used')
                     ->multiple()
                     ->options([
-                        'html' => 'HTML',
-                        'css' => 'CSS',
-                        'javascript' => 'JavaScript',
-                        'php' => 'PHP',
-                        'laravel' => 'Laravel',
-                        'mysql' => 'MySQL',
-                        'tailwind' => 'Tailwind',
-                        'wordpress' => 'WordPress',
-                        'nodejs' => 'Node.js',
-                        'aspnet' => 'ASP.NET',
-                        'csharp' => 'C#',
-                        'java' => 'Java',
-                        'discordjs' => 'Discord.js',
-                        'seo' => 'SEO',
-            ])                
+                        'HTML' => 'HTML',
+                        'CSS' => 'CSS',
+                        'Javascript' => 'JavaScript',
+                        'PHP' => 'PHP',
+                        'Laravel' => 'Laravel',
+                        'MySQL' => 'MySQL',
+                        'Tailwind' => 'Tailwind',
+                        'WordPress' => 'WordPress',
+                        'Node.js' => 'Node.js',
+                        'ASP.NET' => 'ASP.NET',
+                        'C#' => 'C#',
+                        'Java' => 'Java',
+                        'Discord.js' => 'Discord.js',
+                        'SEO' => 'SEO',
+                    ])
                     ->required(),
                 Forms\Components\TextInput::make('url')
                     ->label("Project URL"),

@@ -152,11 +152,27 @@
                     </div>
                     <div class="w-3/4 xs:text-center sm:text-center xs:block sm:block sm:mx-auto xs:mx-auto">
                         <h1 class="uppercase text-6xl font-antonio font-bold text-icon">{{ $project->name }}</h1>
-                        @foreach ($project->skills_used as $skill)
-                            <p>{{ $skill }}</p>
-                        @endforeach
+                        <div class="flex">
+                            @foreach ($project->skills_used as $skill)
+                                <div
+                                    class="px-6 py-3 mb-5 mr-5 text-lg bg-icon 
+                        font-antonio font-bold text-text">
+                                    <p>{{ $skill }}</p>
+                                </div>
+                            @endforeach
+                        </div>
                         <p class="text-xl md:text-lg sm:text-sm font-antonio xs:text-sm text-text">
                             {{ $project->description }}</p>
+                        <div class="flex">
+                            @foreach ($project->url as $url)
+                                <a href="{{ $url }}" target="_blank"
+                                    class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Visit Site</a>
+                            @endforeach
+                            @foreach ($project->github as $github)
+                                <a href="{{ $github }}" target="_blank"
+                                    class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">View Code</a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             @endforeach
