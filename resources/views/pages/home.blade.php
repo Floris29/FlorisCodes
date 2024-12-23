@@ -137,7 +137,7 @@
     <section id="portfolio">
         <div class="text-center w-3/5 mx-auto my-24">
             <h2 class="text-7xl xs:text-6xl text-title uppercase font-antonio font-bold leading-none">My portfolio</h2>
-            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio mb-5 leading-none">Each project is a
+            <h3 class="text-5xl xs:text-md-5xl text-subtitle uppercase font-antonio leading-none">Each project is a
                 learning experience.</h3>
         </div>
 
@@ -145,7 +145,7 @@
             @foreach ($projects as $project)
                 <div
                     class="flex {{ $loop->index % 2 == 0 ? 'flex-row' : 'flex-row-reverse' }} items-center justify-center 
-                    group gap-8 lg:gap-8 md:gap-7 sm:block xs:block p-5 bg-primary-bg w-2/3 mx-auto">
+                    group gap-8 lg:gap-8 md:gap-7 sm:block xs:block p-5 bg-primary-bg w-2/3 mx-auto mt-5">
 
                     <div>
                         <img src="{{ asset('storage/public/' . $project->image_path) }}" alt="{{ $project->name }}"
@@ -179,7 +179,6 @@
                                 class="px-6 py-3 mr-5 text-lg bg-icon font-antonio font-bold text-text uppercase lg:px-4 lg:py-2 md:py-2 sm:px-4 sm:py-2 xs:px-4 xs:py-2">View
                                 Code</a>
                         </div>
-
                     </div>
                 </div>
             @endforeach
