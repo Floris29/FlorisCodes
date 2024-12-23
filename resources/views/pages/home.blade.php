@@ -171,7 +171,7 @@
                         <p class="text-xl md:text-lg sm:text-md font-antonio xs:text-md text-text lg:text-lg">
                             {{ $project->description }}</p>
 
-                        <div class="flex mt-3 md:justify-between sm:justify-between xs:justify-between">
+                        <div class="flex mt-3 md:justify-between sm:justify-center xs:justify-center">
                             @if ($project->url)
                                 <a href="{{ $project->url }}" target="_blank"
                                     class="px-6 py-3 mr-5 text-lg bg-icon font-antonio font-bold text-text uppercase lg:px-4 lg:py-2 md:py-2 sm:px-4 sm:py-2 xs:px-4 xs:py-2">Visit
