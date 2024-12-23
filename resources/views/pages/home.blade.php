@@ -161,7 +161,7 @@
                             @if ($project->skills_used)
                                 @foreach ($project->skills_used as $skill)
                                     <div
-                                        class="px-6 py-3 mb-3 mr-5 text-lg bg-icon font-antonio font-bold text-text lg:px-4 lg:py-2 md:py-2 sm:px-4 sm:py-2 xs:px-4 xs:py-2">
+                                        class="px-6 py-3 mb-3 mr-5 text-lg bg-icon font-antonio font-bold text-text lg:px-4 lg:py-2 md:py-2 sm:px-4 sm:py-2 xs:px-4 xs:py-2 xs:w-1/2 sm:w-1/2">
                                         <p>{{ $skill }}</p>
                                     </div>
                                 @endforeach
