@@ -194,7 +194,7 @@
     </section>
 
     <section id="contact">
-        <div class="mx-auto bg-primary-bg w-2/3 text-center p-5">
+        <div class="mx-auto bg-primary-bg 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-2/3  text-center p-5">
             <h2 class="uppercase text-5xl xs:text-md-5xl font-antonio font-bold text-main-bg m-5"><a
                     href="mailto:Floris@Floriscodes.nl" class="hover:border-4 hover:border-icon p-2">Email me </a></h2>
 
