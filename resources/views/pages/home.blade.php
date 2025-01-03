@@ -106,14 +106,14 @@
                     @foreach ($skills as $skill)
                         <div
                             class="px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg 
-                        font-antonio font-bold text-text">
+                        font-antonio font-bold text-text sm:mb-4 sm:mr-4 xs:mb-4 xs:mr-4">
                             {{ $skill->skill }}</div>
                     @endforeach
                 </div>
                 <div class="flex-wrap" id="tools-list">
                     @foreach ($tools as $tool)
                         <div
-                            class="group px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text ">
+                            class="group px-8 py-4 mb-6 mr-6 border border-icon text-lg bg-primary-bg font-antonio font-bold text-text sm:mr-4 xs:mb-4 xs:mr-4">
                             {{ $tool->tool }}
                         </div>
                     @endforeach
@@ -122,10 +122,10 @@
         </div>
 
         <div class="uppercase text-xl xs:text-lg font-antonio text-text font-bold text-center mt-5">
-            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4">Email me
+            <a href="mailto:Floris@Floriscodes.nl" class="hover:bg-main-bg bg-primary-bg px-8 py-4">Email me
             </a>
             <a download="CV-Floris_Melchers" href="CV-Floris_Melchers.pdf"
-                class="hover:bg-main-bg bg-primary-bg px-8 py-4 xs:px-4 xs:py-4 ml-5 xs:ml-2 xs:mx-auto">Download my CV</a>
+                class="hover:bg-main-bg bg-primary-bg px-8 py-4 ml-5 xs:ml-2 xs:mx-auto">Download my CV</a>
         </div>
 
         {{-- <div>
